@@ -1,0 +1,99 @@
+{
+  "assets": {
+    "main.css": "main-1f4fc29c510a3beeb7fbf347db7be8b2.css",
+    "application.js": "application-6f2efded14c255ba091af98ac2830b53.js",
+    "main.js": "main-c86ff75aa512d39df4b0ffdb62c28acf.js"
+  },
+  "files": {
+    "main-ff8ff64bce0db12b80d578bd66c89d43.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T15:14:06.000Z",
+      "size": 150318,
+      "digest": "ff8ff64bce0db12b80d578bd66c89d43"
+    },
+    "application-e1b91adae9b6d652f76b0f2fd9e67c97.js": {
+      "logical_path": "application.js",
+      "mtime": "2015-05-18T15:52:13.000Z",
+      "size": 141997,
+      "digest": "e1b91adae9b6d652f76b0f2fd9e67c97"
+    },
+    "main-b972050f1ed303cdf7687475c72ee17a.js": {
+      "logical_path": "main.js",
+      "mtime": "2015-05-18T15:14:06.000Z",
+      "size": 32,
+      "digest": "b972050f1ed303cdf7687475c72ee17a"
+    },
+    "main-093d4941d524f3b22da243e71b456e1e.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T17:52:33.000Z",
+      "size": 17,
+      "digest": "093d4941d524f3b22da243e71b456e1e"
+    },
+    "main-47392c044d8b9deea421c85e14ec4120.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T18:48:38.000Z",
+      "size": 140882,
+      "digest": "47392c044d8b9deea421c85e14ec4120"
+    },
+    "main-0b4765b19b5570f9770b661d4c34ecc1.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T18:48:38.000Z",
+      "size": 140864,
+      "digest": "0b4765b19b5570f9770b661d4c34ecc1"
+    },
+    "main-cae69c2fcf2d1bbae755f929692ba545.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:06:19.000Z",
+      "size": 141264,
+      "digest": "cae69c2fcf2d1bbae755f929692ba545"
+    },
+    "main-1bbd5ccfcba04bc8a6161e2e6792ece0.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:37:32.000Z",
+      "size": 142447,
+      "digest": "1bbd5ccfcba04bc8a6161e2e6792ece0"
+    },
+    "application-6f2efded14c255ba091af98ac2830b53.js": {
+      "logical_path": "application.js",
+      "mtime": "2015-05-18T19:21:16.000Z",
+      "size": 142426,
+      "digest": "6f2efded14c255ba091af98ac2830b53"
+    },
+    "main-c86ff75aa512d39df4b0ffdb62c28acf.js": {
+      "logical_path": "main.js",
+      "mtime": "2015-05-18T19:21:16.000Z",
+      "size": 462,
+      "digest": "c86ff75aa512d39df4b0ffdb62c28acf"
+    },
+    "main-4d69a5e8ce996ae7300c1087cb0b0b55.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:33:54.000Z",
+      "size": 141906,
+      "digest": "4d69a5e8ce996ae7300c1087cb0b0b55"
+    },
+    "main-65aebc3d95d42b9c30dd40e1f03aeec4.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:38:32.000Z",
+      "size": 153455,
+      "digest": "65aebc3d95d42b9c30dd40e1f03aeec4"
+    },
+    "main-e41efa21609361433e9e8b81980fb83b.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:38:32.000Z",
+      "size": 153481,
+      "digest": "e41efa21609361433e9e8b81980fb83b"
+    },
+    "main-254604bb60bb65ffc1e0f2ce863daf7d.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:38:32.000Z",
+      "size": 153443,
+      "digest": "254604bb60bb65ffc1e0f2ce863daf7d"
+    },
+    "main-1f4fc29c510a3beeb7fbf347db7be8b2.css": {
+      "logical_path": "main.css",
+      "mtime": "2015-05-18T19:38:32.000Z",
+      "size": 153466,
+      "digest": "1f4fc29c510a3beeb7fbf347db7be8b2"
+    }
+  }
+}
