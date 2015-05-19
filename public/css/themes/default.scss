@@ -79,7 +79,7 @@ $state-danger-border: #e0b1b8;
 // -------------------------
 
 $navbar-default-bg: rgba(255, 255, 255, 0.9);
-$navbar-default-bg: #fff;
+$navbar-default-bg: #FFF;
 $navbar-default-link-color: #252525;
 $navbar-default-link-hover-color: #4da5f4;
 $navbar-default-link-active-color: #4da5f4;
@@ -91,6 +91,7 @@ $navbar-default-brand-hover-color: #4da5f4;
 .navbar-default {
   border: 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  
 
   .navbar-nav {
     > li > a {
