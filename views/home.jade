@@ -1,5 +1,8 @@
 extends layout
 
+block styles
+  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.css")
+
 block content
   #fullpage
     section.section.dlh#section0
@@ -34,4 +37,6 @@ block content
         
       .grid-full
         .item(style="background-image: url(/images/gww/gww5.jpg)")
-  
+          
+block scripts
+  script(src='/js/lib/jquery.fullPage.js')

@@ -27,9 +27,12 @@ var connectAssets = require('connect-assets');
  */
 var homeController = require('./controllers/home');
 var davidController = require('./controllers/david');
+var wwController = require('./controllers/ww');
+var gwwController = require('./controllers/gww');
+var contactController = require('./controllers/contact');
+var contactController = require('./controllers/contact');
 // var userController = require('./controllers/user');
 // var apiController = require('./controllers/api');
-// var contactController = require('./controllers/contact');
 
 /**
  * API keys and Passport configuration.
@@ -97,6 +100,14 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  */
 app.get('/', homeController.index);
 app.get('/david', davidController.getDavid);
+app.get('/david/about', davidController.getDavidAbout);
+app.get('/david/media', davidController.getDavidMedia);
+app.get('/david/partnerships', davidController.getDavidPartnerships);
+app.get('/david/appearances', davidController.getDavidAppearances);
+app.get('/word-winder', wwController.getWordWinder);
+app.get('/giant-word-winder', gwwController.getGiantWordWinder);
+app.get('/contact', contactController.getContact);
+app.post('/contact', contactController.postContact);
 // app.get('/login', userController.getLogin);
 // app.post('/login', userController.postLogin);
 // app.get('/logout', userController.logout);
@@ -106,8 +117,6 @@ app.get('/david', davidController.getDavid);
 // app.post('/reset/:token', userController.postReset);
 // app.get('/signup', userController.getSignup);
 // app.post('/signup', userController.postSignup);
-// app.get('/contact', contactController.getContact);
-// app.post('/contact', contactController.postContact);
 // app.get('/account', passportConf.isAuthenticated, userController.getAccount);
 // app.post('/account/profile', passportConf.isAuthenticated, userController.postUpdateProfile);
 // app.post('/account/password', passportConf.isAuthenticated, userController.postUpdatePassword);

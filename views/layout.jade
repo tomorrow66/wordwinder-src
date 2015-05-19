@@ -7,7 +7,8 @@ html
     meta(name='csrf-token', content=_csrf)
     title #{title} - Word Winder
     link(href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700", rel="stylesheet", type="text/css")
-    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.css")
+    block styles
+      
     != css('main')
   body
     include partials/header
@@ -15,6 +16,9 @@ html
     include partials/flash
     block content
 
-    //- include partials/footer
+    include partials/footer
 
     != js('application')
+    
+    block scripts
+      
