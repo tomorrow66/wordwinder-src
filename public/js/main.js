@@ -1,27 +1,14 @@
 (function() {
   'use strict';
 
-  function slugify(text) {
-    return text.toString().toLowerCase().trim()
-      .replace(/\s+/g, '-')           // Replace spaces with -
-      .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
-      .replace(/\-\-+/g, '-');         // Replace multiple - with single -
-  }
-
   $(document).ready(function() {
-    var anchors = ['David L Hoyt', 'Word Winder', 'Giant Word Winder'];
-    var i;
-    for (i in anchors) {
-      var slug = slugify(anchors[i]);
-      console.log(slug);
-    }
 
-    $('#fullpage').fullpage({
-      anchors: anchors,
+    $('.home#fullpage').fullpage({
+      anchors: ['david', 'word-winder', 'giant-word-winder'],
       sectionsColor: ['#FFFFFF', '#FFFFFF', '#E14603'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: anchors,
+      navigationTooltips: ['David L. Hoyt', 'Word Winder', 'Giant Word Winder'],
       loopBottom: true,
       responsive: 900,
       css3: true
