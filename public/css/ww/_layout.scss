@@ -250,29 +250,104 @@ header {
 }
 
 // david page 1
-.david_post
+
+
+//page margin
+.topmargin
 {
   margin-top: 100px;
-  z-index: -1;
 }
-.lower{
-  margin-top: 170px;
-}
-.textbox{
-  width: 100%;
-  background-color: #e62222;
-  padding :30px;
-  margin-top: -70px;
-}
-.bcenter{
-margin-top: 30px;
-margin-bottom: 40px;
+h2{
+  color:#0094C5;
 }
 
-.bottom{
+.lowermargin{
+  margin-top: 170px;
+}
+
+
+// text box
+.textbox-top{
+  background-color: #EEE;
+  padding:30px;
+  margin-top:30px;
+}
+.textbox-down{
   width: 100%;
-  height: 70px;
-  margin-top: -30px;
-  background-image:image();
-  background-color: #1b8f15;
+  background-color:#0094C5;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -70px;
+}
+// text styles
+.white{
+  color: #ffffff;
+}
+
+.picture-wide{
+  width: 100%;
+  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+// LEFT CENTER RIGHT TOP
+.top{
+  margin-top: 40px;
+}
+.bottom{
+  margin-bottom: 15px;
+}
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.left{
+
+}
+.right{
+
+}
+
+// Z index
+.zindex-1{
+  z-index: -10;
+}
+.zindex1{
+  z-index: 1;
+}
+.zindex2{
+  z-index: 2;
+}
+
+
+
+
+
+// bottom-part
+
+.bottom-img{
+  width: 100%;
+  height: 200px;
+  margin-top:-17px;
+  //border: solid 1px rgba(12, 37, 59, 0.89);
+  background-color: rgba(7, 120, 241, 0.59);
+}
+ // button make over
+ .btncover{
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color:#E6441C;
+
+ }
+.background-orange{
+  width:100%;
+  background-color: #FFD265;
 }
