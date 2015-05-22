@@ -1,22 +1,79 @@
 extends ../layout
-
+block beforeBody
+  - bodyClasses.push('ww')
 block content
-  .container
-    .row
-      .topmargin
-        h1.text-center Word Winder
-        h2.text-center The Game
-        .col-md-6.col-md-offset-3.textbox-top
-          p.text-center
-            | Nullam quis tempor purus, sit amet condimentum arcu. Fusce tempus tempus neque, eu hendrerit neque aliquam sed. Maecenas condimentum, leo id fringilla ornare, libero diam sagittis ligula, id gravida enim risus sed nunc. Phasellus hendrerit quam a erat egestas, varius malesuada lacus iaculis. Suspendisse at consequat ligula, a cursus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar massa semper, suscipit mi eu, aliquet augue. Praesent vestibulum dolor eu dignissim finibus.
-    .row
-      .text-center.top
-        button.btncover.btn.btn-warning SHOP / BUY
-        br
-        .row 
-          img.bottom(src='images/ww/ww_board_lowpx.png' width='900px' height='506px')
-    .row
-  h1.textbox-down.text-center HOW TO PLAY WORDWINDER
-  .row
-  img.bottom-img(src='http://placehold.it/1080x200')
+  section.split.white
+    .slant.yellow
+    .container
+      .row
+        .col-md-6.col-md-offset-3.text-center
+          .ww-intro
+            h1 Word Winder
+            h2 The Game
+        .row
+          .col-md-8.col-md-offset-2
+            .textbox-top
+              p.text-center
+                | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
+              .text-center.top
+                .btn.btn-default.buy SHOP / BUY
+          .row
+            .col-md-8.col-md-offset-2
+              img.bottom(src='images/ww/ww_board_lowpx.png' width='900px' height='506px')
+              
+  section.info-bar
+    .container
+      .row
+        .col-md-12
+          h2.textbox-down.text-center HOW TO PLAY WORDWINDER
+          
+  section.how-to-play
+    .container
+      .row
+        .col-md-12
+          h3 Game Play Overview
+          p
+            | Each player’s or team’s turn consists of spelling a single word on the board by placing their colored WORD WINDER™ chips on the printed letter squares. Each player should announce the word being spelled as the chips are placed.
+          .play-gfx
+            img(src="http://static.wixstatic.com/media/75f597_6bcb42246a97eeaa6d3130a9b75e3e21.png_srz_p_726_159_75_22_0.50_1.20_0.00_png_srz", alt="")
+          p
+            | Each player’s or team’s turn consists of spelling a single word on the board by placing their colored WORD WINDER™ chips on the printed letter squares. Each player should announce the word being spelled as the chips are placed.
+          .play-gfx
+            img(src="http://static.wixstatic.com/media/75f597_6fab148020a62a1ec15ee72e101579d3.png_srz_p_726_204_75_22_0.50_1.20_0.00_png_srz", alt="")
+              
+      .row
+        .col-md-6.col-md-offset-3
+          iframe(width="560", height="315", src="https://www.youtube.com/embed/l4Jskjl9KWE", frameborder="0", allowfullscreen="")
+            
+  section.info-bar(style="margin-top:40px;")
+    .container
+      .row
+        .col-md-12
+          h2.textbox-down.text-center Testimonials
+          
+  section.testimonials
+    .container
+      .row
+        .col-md-12
+          ul.grid-testimonials
+            li
+              div
+                p
+                  | “This ridiculously fun game is perfect for those who love Scrabble - AND especially perfect for those who hate Scrabble!”
+                span.quote-arrow
+              span.grid-testimonials-citation Stars Entertainment
+              
+            li
+              div
+                p
+                  | "Word Winder HD trumps just about any other word game for iPad."
+                span.quote-arrow
+              span.grid-testimonials-citation AppCraver Review
+              
+            li
+              div
+                p
+                  | If you’re looking for a more challenging kind of word-search puzzle, this app passes the test.”
+                span.quote-arrow
+              span.grid-testimonials-citation Christina Barron, Washington Post
   

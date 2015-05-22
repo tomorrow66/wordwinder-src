@@ -97,11 +97,20 @@ header {
       p {
       }
 
-      button {
+      .btn-default {
         color: #fff;
         // font-family: 'Amatic SC',cursive;
         font-size: 2rem;
         font-weight: 700;
+        border: 2px solid #fff;
+
+        &:hover {
+          background: transparent;
+          border-color: #fff;
+        }
+        a {
+          color: #fff;
+        }
       }
     }
   }
@@ -164,7 +173,7 @@ header {
         color: #DEA647;
       }
 
-      button {
+      .btn-default {
         color: #E14603;
         // font-family: 'Amatic SC',cursive;
         font-size: 2rem;
@@ -174,6 +183,9 @@ header {
         &:hover {
           background: transparent;
           border-color: #E14603;
+        }
+        a {
+          color: #E14603;
         }
       }
     }
@@ -194,7 +206,7 @@ header {
       p {
       }
 
-      button {
+      .btn-default {
         color: #fff;
         // font-family: 'Amatic SC',cursive;
         font-size: 2rem;
@@ -217,6 +229,19 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
       }
+    }
+  }
+}
+
+section {
+  padding-bottom: 20px;
+  &.yellow {
+    background-color: #ffd34e;
+  }
+  &.fullpage {
+    .ww-intro {
+      background-color: rgba(255, 255, 255, .5);
+      padding: 10px 0;
     }
   }
 }
@@ -265,10 +290,29 @@ h2{
   margin-top: 170px;
 }
 
+.david-intro,
+.ww-intro,
+.gww-intro {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 3px solid #0094C5;
+}
+
+.david-intro {
+  text-align: right;
+}
+
+.ww-intro {
+  border-bottom: none;
+  h1 {
+    color: #444;
+  }
+}
 
 // text box
 .textbox-top{
-  background-color: #EEE;
+  background-color: #F9F9F9;
+  color: #444;
   padding:30px;
   margin-top:30px;
 }
@@ -276,11 +320,7 @@ h2{
   width: 100%;
   background-color:#0094C5;
   color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: -70px;
+  padding: 20px 40px;
 }
 // text styles
 .white{
@@ -325,10 +365,6 @@ margin-right: auto;
   z-index: 2;
 }
 
-
-
-
-
 // bottom-part
 
 .bottom-img{
@@ -350,4 +386,117 @@ margin-right: auto;
 .background-orange{
   width:100%;
   background-color: #FFD265;
+}
+
+.split {
+  background-color: #f4f7f8;
+  &.white {
+    background-color: #fff;
+  }
+}
+
+.info-bar {
+  position: relative;
+  background-color: #0094C5;
+  margin-top: -5px;
+  padding-bottom: 0;
+
+  p {
+    color: #ffffff;
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+}
+
+.slant {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  border-top: 100vh solid #fff;
+  border-right: 70vw solid transparent;
+
+  &.white {
+    border-top: 100vh solid #fff;
+  }
+  &.yellow {
+    border-top: 100vh solid #ffd34e;
+  }
+}
+section.more {
+  background-color: #fff;
+  padding: 40px 0 0;
+}
+.box {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  border: 5px solid #E04703;
+}
+
+.play-gfx {
+  margin-bottom: 20px;
+}
+
+// Testimonial Grid
+.grid-testimonials
+{
+  overflow: hidden;
+  padding-top: 3.125em
+}
+.grid-testimonials li
+{
+  float: left;
+  list-style-type: none;
+  padding-bottom: 3.125em
+}
+.grid-testimonials p
+{
+  line-height: 1.5em;
+  margin: 0
+}
+.grid-testimonials-citation
+{
+  color: #656262;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: center
+}
+.grid-testimonials li div
+{
+  border: 10px solid #ebebeb;
+  padding: 2.125em 7.638888888888889%;
+  position: relative;
+  min-height: 184px;
+}
+.grid-testimonials .quote-arrow
+{
+  background: #fff;
+  border-right:10px solid #ebebeb;
+  border-bottom:10px solid #ebebeb;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  margin-left: -25px;
+  width: 40px;
+  height: 40px;
+  -moz-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+@media screen and (min-width: 50em)
+{
+  .grid-testimonials li
+  {
+    margin-right: 5%;
+    width: 30%
+  }
+  .grid-testimonials li:nth-child(3n)
+  {
+    margin-right: 0
+  }
 }

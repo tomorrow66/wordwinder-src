@@ -1,0 +1,68 @@
+// David page styles
+body.david {
+  section {
+    padding-bottom: 0;
+  }
+  .david-intro {
+    h1 {
+
+    }
+    h2 {
+      color: #0094C5;
+    }
+  }
+  .david-intro-more {
+    padding-bottom: 20px;
+  }
+  .david-intro,
+  .david-intro-more {
+    text-align: right;
+  }
+  .thumb {
+    margin-top: 13px;
+  }
+  .info-bar {
+    margin-top: -5px;
+  }
+
+  .more {
+    span {
+      color: #0094C5;
+    }
+  }
+}
+// Word Winder page styles
+body.ww {
+  .btn-default.buy {
+    color: #E14603;
+    // font-family: 'Amatic SC',cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #E14603;
+
+    &:hover {
+      background: transparent;
+      border-color: #E14603;
+    }
+  }
+}
+// Gaint Word Winder page styles
+body.gww {
+  .gww-intro {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 20px 0;
+    border-bottom: none;
+    h1 {
+      color: #fff;
+      // font-weight: 700;
+    }
+    h2 {
+      color: #0094C5
+      // font-weight: 700;
+    }
+    p {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}

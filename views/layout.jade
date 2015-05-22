@@ -1,3 +1,5 @@
+- var bodyClasses = [];
+block beforeBody
 doctype html
 html
   head
@@ -10,7 +12,7 @@ html
     block styles
       
     != css('main')
-  body
+  body(class=bodyClasses)
     include partials/header
 
     include partials/flash

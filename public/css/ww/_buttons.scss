@@ -60,3 +60,45 @@ button:disabled {
   cursor: not-allowed;
   opacity: .40;
 }
+.btn-default {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: inherit;
+  color: #fff;
+  border: 2px solid #444;
+  border-radius: 0;
+  margin-bottom: $sm-pad;
+  margin-right: $xs-pad;
+  padding: $sm-pad $md-pad;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: $transition;
+  -webkit-user-drag: none;
+  user-select: none;
+  vertical-align: baseline;
+  box-shadow: none;
+
+  &:hover {
+    background: #444;
+    border-color: #444;
+    color: #fff;
+  }
+
+  a,
+  a:hover {
+    color: #fff;
+  }
+}
+
+.btn-default.buy {
+  color: #FFF;
+  // font-family: 'Amatic SC',cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 2px solid #FFF;
+
+  &:hover {
+    background: transparent;
+    border-color: #FFF;
+  }
+}

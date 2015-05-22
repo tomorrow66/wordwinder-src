@@ -1,0 +1,7 @@
+{
+  "name": "Word Winder",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "",
+  "logo": "",
+  "keywords": ["node", "express", "prismic.io"]
+}
