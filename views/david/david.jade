@@ -2,49 +2,149 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('david')
 block content
-  section.split
-    .slant.white
-    .container
+  section.full(style="background-color:#f4f7f8;")
+    .slant
+    .container-fluid.site-wrapper-inner
       .row
-        .col-md-6
-          .thumb
-            img( src='images/david/david_blue_hands_pockets_720.png')
-        .col-md-6.text-center
-          .david-intro
-            h1 DAVID L. HOYT
-            h2.blue PUZZLED MAN
+        .col-md-5.col-md-offset-1
+          .intro
+            .david-intro
+              h1 DAVID L. HOYT
+              h2.blue PUZZLED MAN
+              p
+                | As the most syndicated daily game creator in the world, David L. Hoyt is the self-confessed puzzled mind behind a long list of wildly popular games, puzzles and brain-teasers. David’s most famous games include Jumble™, Word Roundup™, Pat Sajak’s Lucky Letters™, Up & Down Words™ and Boggle BrainBusters.™ His games appear in 750 newspapers, including USA Today, New York Daily News, Chicago Tribune and Los Angeles Times.
+            .david-intro-more
+              h2.blue More About David
+              p 
+                | The newest of David’s endeavors is JUST 2 WORDS™; its' fun and fast game play makes it perfect for mobile devices! It's now available for download on iPhone, Android, Nook, and more.
+              p 
+                | Another of David’s endeavors is WORD WINDER™, an entire brand of board games, puzzle books, and mobile apps. Described as “one of the best word games ever,” by Mike Hirtle, former Head of Global Product Acquisition at Hasbro, WORD WINDER™ is the first David L. Hoyt brand that has been taken straight to retail vs. licensing a concept.
+              p 
+                | Electronic versions of many of his addictive puzzles and games are also available to play online at sites such as Shockwave™, Yahoo! Games,™ Patsajackgames.com, EllenTV.com, and Microsoft Zone™ and MSN™ Sites. In print, on the internet and on mobile/tablet devices, David’s games are played by more than 7,000,000 people each day! Additionally, David is the author of more than 25 game and puzzle books.
+        .col-md-5
+          #david-video
+            p.hover-title 
+              | Hover over video to play
+            video.hover-video(width="100%", height="auto", preload="auto" control="false")
+              source(src="videos/david2.mp4", type="video/mp4")
+            #play-pause
+              
+          .david-more
+            .row
+              .col-sm-6
+                .link-wrap
+                  i.fa.fa-book
+                  h2 Some Link
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                  
+              .col-sm-6
+                .link-wrap
+                  i.fa.fa-book
+                  h2 Some Link
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                  
+            .row
+              .col-sm-6
+                .link-wrap
+                  i.fa.fa-book
+                  h2 Some Link
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                  
+              .col-sm-6
+                .link-wrap
+                  i.fa.fa-book
+                  h2 Some Link
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      
+  section.full(style="background-color:#006990;")
+    .container-fluid.site-wrapper-inner
+      .row
+        .col-sm-5.col-md-offset-1
+          h1.headline.white
+            | A Closer Look 
+      .row
+        .col-md-5.col-sm-offset-1
+          iframe(width="640px", height="360px", src="https://www.youtube.com/embed/9YzP9LBl2Sk", frameborder="0", allowfullscreen="")
+              
+        .col-sm-5
+          .more-block
             p
-              | As the most syndicated daily game creator in the world, David L. Hoyt is the self-confessed puzzled mind behind a long list of wildly popular games, puzzles and brain-teasers. David’s most famous games include Jumble™, Word Roundup™, Pat Sajak’s Lucky Letters™, Up & Down Words™ and Boggle BrainBusters.™ His games appear in 750 newspapers, including USA Today, New York Daily News, Chicago Tribune and Los Angeles Times.
-          .david-intro-more
-            p 
-              | The newest of David’s endeavors is JUST 2 WORDS™; its' fun and fast game play makes it perfect for mobile devices! It's now available for download on iPhone, Android, Nook, and more.
-            p 
-              | Another of David’s endeavors is WORD WINDER™, an entire brand of board games, puzzle books, and mobile apps. Described as “one of the best word games ever,” by Mike Hirtle, former Head of Global Product Acquisition at Hasbro, WORD WINDER™ is the first David L. Hoyt brand that has been taken straight to retail vs. licensing a concept.
-            p 
-              | Electronic versions of many of his addictive puzzles and games are also available to play online at sites such as Shockwave™, Yahoo! Games,™ Patsajackgames.com, EllenTV.com, and Microsoft Zone™ and MSN™ Sites. In print, on the internet and on mobile/tablet devices, David’s games are played by more than 7,000,000 people each day! Additionally, David is the author of more than 25 game and puzzle books.
-          //- .david-intro-video
-          //-   iframe(width="420", height="315", src="https://www.youtube.com/embed/b2QC0fEgPgs", frameborder="0", allowfullscreen="") 
-          //- .row
-          //-   button.btn-default WORD WINDER  
-  section.info-bar
-    .container
+              |  David L. Hoyt was born in Waterbury, CT in 1965. In the early 1990s, after pursuing a career as an options trader, David began to create puzzles as a part-time hobby – a pursuit which soon evolved into a full-time passion. After selling games to major companies including Parker Brothers, Mattel and Tiger Electronics, David left behind his trading career to focus on creating games. His sweeping success created an opportunity for him to partner up with Wheel of Fortune legend Pat Sajak. Combining their boundless creativity, the two men have created an online gaming paradise, featuring puzzles such as Lucky Letters™, Trivia Gems™ and the incredibly popular Code Number Sodoku™.
+            p
+              | The newest of David’s endeavors is WORD WINDER™, an entire brand of board games, puzzle books, and mobile apps. Described as “one of the best word games ever,” by Mike Hirtle, former Head of Global Product Acquisition at Hasbro, WORD WINDER™ is the first David L. Hoyt brand that has been taken straight to retail vs. licensing a concept.
+            p
+              | In WORD WINDER™, players attempt to create a continuous winding line of words creating a path from one side of the game board to another. The game board is made up of 16 double sided 4” x 4” letter grid boards that can be organized differently every time you play. In fact there, are 
+              span
+                | 263,130,836,933,693,530,167,197,089,370,112,000 
+              | different board game combinations. WORD WINDER ™ board games, books and apps will launch in spring through nationwide retailers. WORD WINDER ™ is the co-invention of David, Steve Bullock of Adveractive, Inc. and Graeme Thomson of HL Games.
+              
+            .row
+              .col-sm-12
+                h2.white PARTNER WITH DAVID!
+                p.white
+                  | Looking for a word game or puzzle for your next big initiative? Let the creativity abound! David loves partnering with motivated minds and working with great companies to help develop new puzzles and entertaining an audience of from preschool to adults.  
+                  a(href="/contact") Contact
+              
+       
+  section.full(style="background-color:#f4f7f8;")
+    .container-fluid.site-wrapper-inner
       .row
-        .col-md-12
-          h2.textbox-down.text-center MORE ABOUT DAVID
+        .col-sm-5.col-md-offset-1
+          h1.headline
+            | Media, Press & Appearances
             
-  section.more
-    .container
       .row
-        .col-md-12
-          h2 CLOSE UP
-          p
-            |  David L. Hoyt was born in Waterbury, CT in 1965. In the early 1990s, after pursuing a career as an options trader, David began to create puzzles as a part-time hobby – a pursuit which soon evolved into a full-time passion. After selling games to major companies including Parker Brothers, Mattel and Tiger Electronics, David left behind his trading career to focus on creating games. His sweeping success created an opportunity for him to partner up with Wheel of Fortune legend Pat Sajak. Combining their boundless creativity, the two men have created an online gaming paradise, featuring puzzles such as Lucky Letters™, Trivia Gems™ and the incredibly popular Code Number Sodoku™.
-          p
-            | The newest of David’s endeavors is WORD WINDER™, an entire brand of board games, puzzle books, and mobile apps. Described as “one of the best word games ever,” by Mike Hirtle, former Head of Global Product Acquisition at Hasbro, WORD WINDER™ is the first David L. Hoyt brand that has been taken straight to retail vs. licensing a concept.
-          p
-            | In WORD WINDER™, players attempt to create a continuous winding line of words creating a path from one side of the game board to another. The game board is made up of 16 double sided 4” x 4” letter grid boards that can be organized differently every time you play. In fact there, are 
-            span
-              | 263,130,836,933,693,530,167,197,089,370,112,000 
-            | different board game combinations. WORD WINDER ™ board games, books and apps will launch in spring through nationwide retailers. WORD WINDER ™ is the co-invention of David, Steve Bullock of Adveractive, Inc. and Graeme Thomson of HL Games.
-          
-          
+        .col-sm-10.col-md-offset-1
+          h2.headline
+            | Videos
+          .row
+            .col-md-6 
+              iframe(width="640px", height="360px", src="https://www.youtube.com/embed/LS8FBb2NSiw", frameborder="0", allowfullscreen="")
+              h3.text-center
+                | The Morning Blend InterviewNBC Milwaukee - October 23, 2012
+            .col-md-6 
+              iframe(width="640px", height="360", src="https://www.youtube.com/embed/O8hhmzqAU10", frameborder="0", allowfullscreen="")
+              h3.text-center
+                | Watch kids loving it.
+      .row
+        .col-sm-10.col-md-offset-1
+          h2.headline
+            | Press
+            
+      .row
+        .col-sm-5.col-md-offset-1
+          .link-wrap
+            i.fa.fa-book
+            h2 CBS 4 in Davenport, IA ­ April 2, 2012 
+            a(href="http://www.whbf.com/Global/category.asp?C=190186&clipId=6904585&topVideoCatNo=149119&autoStart=true")
+              p Local 4th Grade Tests Word Winder
+          .link-wrap
+            i.fa.fa-book
+            h2 Prairie Advocate ­ March 28, 2012 
+            a(href="http://www.pacc-news.com/3-28-12/cover_story3_28_12.html")
+              p WC 4th Graders Test One of the Best Classroom Word Games    
+          .link-wrap
+            i.fa.fa-book
+            h2 Savanna Times Journal ­ March 28, 2012 
+            a(href="http://www.mycarrollcountynews.com/news/article_adaaeff6-78f1-11e1-adcb-0019bb30f31a.html")
+              p Game creator visits West Carroll Primary School
+          .link-wrap
+            i.fa.fa-book
+            h2 WCCI Radio Interview - March 22, 2012
+            a(href="http://www.whbf.com/")
+              p Interview at Carroll Elementary School in Savanna, IL
+              
+        .col-sm-5
+          .link-wrap
+            i.fa.fa-book
+            h2 Word Winder
+            a(href="http://www.giftsanddec.com/article/547904-Word_Winder_Inks_International_Licensing_Deal.php")
+              p Word Winder Inks International Licensing Deal
+            a(href="http://www.giftsanddec.com/article/547904-Word_Winder_Inks_International_Licensing_Deal.php")
+          .link-wrap
+            i.fa.fa-book
+            h2 2011 ChiTag Recap 
+            p "What I saw and liked"
+            a(href="http://www.thegameaisle.com/2011-chitag-recap/") The Game Aisle 
+            | | 
+            a(href="http://www.tmsfeatures.com/bio/david-hoyt/") Tribune Media Services    

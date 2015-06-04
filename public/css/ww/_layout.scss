@@ -321,7 +321,7 @@ h2{
 }
 
 .david-intro {
-  text-align: right;
+  // text-align: right;
 }
 
 .ww-intro {
@@ -474,6 +474,7 @@ section.more {
 }
 .grid-testimonials p
 {
+  color: #656262;
   line-height: 1.5em;
   margin: 0
 }
@@ -493,6 +494,7 @@ section.more {
   padding: 2.125em 7.638888888888889%;
   position: relative;
   min-height: 184px;
+  border-radius: 5px;
 }
 .grid-testimonials .quote-arrow
 {

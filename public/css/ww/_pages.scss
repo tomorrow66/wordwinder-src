@@ -1,7 +1,7 @@
 // David page styles
 body.david {
   section {
-    padding-bottom: 0;
+    // padding-bottom: 0;
   }
   .david-intro {
     h1 {
@@ -16,7 +16,7 @@ body.david {
   }
   .david-intro,
   .david-intro-more {
-    text-align: right;
+    text-align: left;
   }
   .thumb {
     margin-top: 13px;
@@ -33,36 +33,83 @@ body.david {
 }
 // Word Winder page styles
 body.ww {
-  .btn-default.buy {
+  h1 {
+    color: #fff;
+  }
+  h2 {
+    color: #AD8E34;
+    &.headline {
+      color: #fff;
+    }
+  }
+  p {
+    color: #fff;
+  }
+  .btn-default {
     color: #E14603;
     // font-family: 'Amatic SC',cursive;
     font-size: 2rem;
     font-weight: 700;
-    border: 2px solid #E14603;
+    border-color: #0094C5;
 
     &:hover {
       background: transparent;
       border-color: #E14603;
     }
+
+    span {
+      color: #fff;
+    }
+  }
+  .grid-testimonials p {
+    color: #656262;
   }
 }
 // Gaint Word Winder page styles
 body.gww {
   .gww-intro {
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 148, 197, 0.7);
     padding: 20px 0;
     border-bottom: none;
+    border-radius: 10px;
     h1 {
       color: #fff;
       // font-weight: 700;
     }
     h2 {
-      color: #0094C5
+      color: #fff;
       // font-weight: 700;
     }
     p {
       color: #fff;
       font-weight: 700;
+    }
+  }
+  h3.headline {
+    color: #0094C5;
+    margin-bottom: 20px;
+  }
+  .btn-default {
+    color: #fff;
+    // font-family: 'Amatic SC',cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    border-color: #FFD84B;
+
+    &:hover {
+      background: transparent;
+      border-color: #FFD84B;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+  ul {
+    li {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 20px;
     }
   }
 }

@@ -1,9 +1,25 @@
 extends layout
-
+block beforeBody
+  - bodyClasses.push('home')
 block styles
-  //- link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.css")
 
 block content
+  .page-nav
+    .page-nav-content
+      ul
+        li
+          span#icon DLH
+          span.text 
+            a.page-scroll(href="#david") DAVID
+        li
+          span#icon WW
+          span.text 
+            a.page-scroll(href="#ww") WORD WINDER
+        li
+          span#icon GWW
+          span.text 
+            a.page-scroll(href="#gww") GIANT WORD WINDER
+
   section#david.david-section
     //- .slant
     .overlay
@@ -35,16 +51,17 @@ block content
               #play-pause
   
   section#ww.ww-section
-    .slant
+    //- .slant
     .overlay
       .container-fluid.site-wrapper-inner
         .row
           .col-md-5.col-md-offset-1
             .gfx-block
-              img(src="/images/ww/word_winder_board_gfx.svg", alt="")
+              img(src="/images/ww/home_wordwinder_gfx.png", alt="")
           .col-md-5
             .intro
               h1 Word Winder
+              h2 The game of winding words
               p
                 | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
               a.btn.btn-default.btn-lg.page-scroll(href="/david")

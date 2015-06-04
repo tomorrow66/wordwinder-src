@@ -2,48 +2,59 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('ww')
 block content
-  section.full(style="background-color:#ffd34e;")
-    .container-fluid.site-wrapper-inner
+  section.split.white
+    .slant.yellow
+    .container
       .row
-        .col-md-4.col-md-offset-1
-          img.bottom(src='images/ww/ww_board_lowpx.png' width='900px' height='506px')
-        .col-md-6
-          .intro
+        .col-md-6.col-md-offset-3.text-center
+          .ww-intro
             h1 Word Winder
             h2 The Game
-            p
-              | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
+        .row
+          .col-md-8.col-md-offset-2
+            .textbox-top
+              p.text-center
+                | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
               .text-center.top
-              a.btn.btn-default.btn-lg.page-scroll(href="#")
-                span
-                  | SHOP / BUY
-                  
-  section.full(style="background-color:#AD8E34;")
-    .container-fluid.site-wrapper-inner
+                .btn.btn-default.buy SHOP / BUY
+          .row
+            .col-md-8.col-md-offset-2
+              img.bottom(src='images/ww/ww_board_lowpx.png' width='900px' height='506px')
+              
+  section.info-bar
+    .container
       .row
-        .col-sm-5.col-md-offset-1
-          h1.headline
-            | HOW TO PLAY WORDWINDER
-          h2.headline
-            | Game Play Overview
+        .col-md-12
+          h2.textbox-down.text-center HOW TO PLAY WORDWINDER
+          
+  section.how-to-play
+    .container
       .row
-        .col-md-5.col-sm-offset-1
+        .col-md-12
+          h3 Game Play Overview
           p
             | Each player’s or team’s turn consists of spelling a single word on the board by placing their colored WORD WINDER™ chips on the printed letter squares. Each player should announce the word being spelled as the chips are placed.
           .play-gfx
             img(src="http://static.wixstatic.com/media/75f597_6bcb42246a97eeaa6d3130a9b75e3e21.png_srz_p_726_159_75_22_0.50_1.20_0.00_png_srz", alt="")
-        .col-md-5
+          p
+            | Each player’s or team’s turn consists of spelling a single word on the board by placing their colored WORD WINDER™ chips on the printed letter squares. Each player should announce the word being spelled as the chips are placed.
           .play-gfx
             img(src="http://static.wixstatic.com/media/75f597_6fab148020a62a1ec15ee72e101579d3.png_srz_p_726_204_75_22_0.50_1.20_0.00_png_srz", alt="")
-          p
-            | Words may be spelled in any direction— from left to right, right to left, up or down, diagonally, or any combination of these — so long as the square of each letter in the word is touching the square of the word’s very next letter.
-            
-  section.full(style="")
-    .container-fluid.site-wrapper-inner
+              
       .row
-        .col-sm-10.col-md-offset-1
-          h1.headline.dark
-            | Testimonials
+        .col-md-6.col-md-offset-3
+          iframe(width="560", height="315", src="https://www.youtube.com/embed/l4Jskjl9KWE", frameborder="0", allowfullscreen="")
+            
+  section.info-bar(style="margin-top:40px;")
+    .container
+      .row
+        .col-md-12
+          h2.textbox-down.text-center Testimonials
+          
+  section.testimonials
+    .container
+      .row
+        .col-md-12
           ul.grid-testimonials
             li
               div
@@ -65,5 +76,4 @@ block content
                   | If you’re looking for a more challenging kind of word-search puzzle, this app passes the test.”
                 span.quote-arrow
               span.grid-testimonials-citation Christina Barron, Washington Post
-    
   

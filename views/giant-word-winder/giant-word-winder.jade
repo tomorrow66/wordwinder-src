@@ -2,13 +2,13 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('gww')
 block content
-  section.fullpage(style="background-image: url(/images/gww/gww2.jpg);min-height: 90vh;background-size:cover;")
-    .container
+  section.full(style="background-image: url(/images/gww/gww2.jpg);min-height: 90vh;background-size:cover;")
+    .container-fluid.site-wrapper-inner
       .row
-        .col-md-12
+        .col-md-5.col-md-offset-1
           .gww-intro
             h1.text-center Giant Word Winder
-            h2.text-center
+            h2.text-cent.col-md-8.col-md-offset-2
               | Changing the way kids learn, educators teach, and everybody plays!
             .row
               .col-md-8.col-md-offset-2
@@ -19,44 +19,51 @@ block content
                 P.text-left
                   | Invented by David L. Hoyt, the author of the Jumble™ and creator of Word Round Up™, the Word Winder® gaming system has been touted “the best word game on the market!”  With so many ways to play and on multiple platforms, Word Winder® is endlessly entertaining.
                 .text-center.top
-                  .btn.btn-default.buy SHOP / BUY 
+                  .btn.btn-default SHOP / BUY 
+        .col-md-5
+          #gww-video
+            p.hover-title.white
+              | Hover over video to play
+            video.hover-video(width="100%", height="auto", preload="auto" control="false")
+              source(src="videos/gww.mp4", type="video/mp4")
+            #play-pause
           
-  section.info-bar
-    .container
+  section.full(style="")
+    .container-fluid.site-wrapper-inner
       .row
-        .col-md-12  
-          h2.textbox-down.text-center WATCH WHAT THE TEACHERS ARE SAYING
-  section(style="margin-top:40px;")
-    .container
+        .col-md-10.col-md-offset-1
+          h2.headline WATCH WHAT THE TEACHERS ARE SAYING
       .row
-        .col-md-6 
+        .col-md-5.col-md-offset-1
           iframe(width="560", height="315", src="https://www.youtube.com/embed/zUxjPZwgh_Q", frameborder="0", allowfullscreen="")
           h3.text-center
             | Watch what teachers are saying.
-        .col-md-6 
+        .col-md-5 
           iframe(width="560", height="315", src="https://www.youtube.com/embed/uB1VJvg4-4s", frameborder="0", allowfullscreen="")
           h3.text-center
             | Watch what kids are saying.
       .row 
-        .col-md-6 
+        .col-md-5.col-md-offset-1 
           iframe(width="560", height="315", src="https://www.youtube.com/embed/-2wgwp1seps", frameborder="0", allowfullscreen="")
           h3.text-center
             | Watch kids showing how it works.
-        .col-md-6 
+        .col-md-5 
           iframe(width="560", height="315", src="https://www.youtube.com/embed/O8hhmzqAU10", frameborder="0", allowfullscreen="")
           h3.text-center
             | Watch kids loving it.
-  section.info-bar
-    .container
+
+  section.full(style="background-color:#FFD34E;")
+    .container-fluid.site-wrapper-inner
       .row
-        .col-md-12  
-          h2.textbox-down.text-center 
-            | How to ORDER GIANT Word Winder®
-  section(style="margin-top:40px;")
-    .container
+        .col-md-10.col-md-offset-1   
+          h1.headline
+            | More about GIANT Word Winder®
+            
       .row
-        .col-md-6  
-          p 
+        .col-md-5.col-md-offset-1
+          h2.headline
+            | How to ORDER GIANT Word Winder®   
+          h3.headline 
             | GIANT Word Winder® is available for purchase directly for $350.  This includes:
           ul
             li 
@@ -67,8 +74,18 @@ block content
               | GIANT Word Winder® Rules and Instructions
             li 
               | 3 FREE Word Winder® board games and shipping
-        .col-md-6 
-          img(src="http://static.wixstatic.com/media/75f597_1244fb76cd7660c0474f2cb6837fad00.png_srz_p_377_267_75_22_0.50_1.20_0.00_png_srz", alt="") 
+        .col-md-5
+          h2.headline 
+            |  WORD WINDER™ in the Classroom
+          p 
+            | After seeing how well Word Winder™ worked in the classroom, we created GIANT Word Winder For the Classroom.
+          .col-md-6
+            img(src="http://static.wixstatic.com/media/75f597_518c44966954b6c02f491b110cfbe0a1.png_srz_p_196_191_75_22_0.50_1.20_0.00_png_srz", alt="")
+          .col-md-6
+            img(src="http://static.wixstatic.com/media/75f597_10cb5344c34191aec4bb8ffaa08a5026.png_srz_p_191_191_75_22_0.50_1.20_0.00_png_srz", alt="") 
+          .row
+            .col-md-12
+              iframe(width="640px", height="360", src="https://www.youtube.com/embed/7DfvNC8Ed3g", frameborder="0", allowfullscreen="")
     
       
   
