@@ -14,6 +14,7 @@
 @import 'ww/media';
 @import 'ww/layout';
 @import 'ww/pages';
+@import 'ww/px-video';
 // @import "styles";
 
 
@@ -26,8 +27,8 @@ html {
 }
 
 body {
-  padding-top: 50px;
-  margin-bottom: 75px;
+  // padding-top: 50px;
+  // margin-bottom: 75px;
 }
 
 footer {
@@ -47,6 +48,51 @@ footer {
 
 // Navbar
 // -------------------------
+
+.navbar-brand {
+  display: block;
+  font-size: 22px;
+  line-height: 20px;
+  width: 300px;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  padding: 0;
+  line-height: 1;
+  height: 100%;
+}
+
+.navbar-default {
+  background-color: #E04703;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #444;
+  font-size: 18px;
+  line-height: 38px;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: #fff;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #E04703;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
 
 .navbar-nav img {
   width: 30px;
@@ -76,4 +122,240 @@ footer {
 .fa,
 [class^='ion-'] {
   margin-right: 6px;
+}
+
+// Buttons
+// -------------------------
+
+.btn-lg {
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.btn-default {
+  background-color: transparent;
+  border: 2px solid #0094C5;
+
+  span {
+    color: #E04703;
+    padding: 5px;
+  }
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: transparent;
+  color:#0094C5;
+  border: 2px solid #E04703;;
+}
+
+// Section
+// -------------------------
+section {
+  position: relative;
+
+  .intro {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: inherit;
+    max-width: 800px;
+    padding: 20px;
+
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+
+  .gfx-block {
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+.david-section {
+  background-image: url(/images/david/david4.jpg);
+
+  .slant {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    border-top: 70vh solid #c12b38;
+    border-right: 70vw solid transparent;
+    @media (min-width: 1280px) {
+      border-top: 98vh solid #c12b38;
+      border-right: 98vw solid transparent;
+    }
+  }
+
+  .intro {
+    background-color: transparent;
+  }
+}
+.ww-section {
+  background-color: #fff;
+
+  .slant {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    border-top: 70vh solid #0094C5;
+    border-right: 70vw solid transparent;
+    @media (min-width: 1280px) {
+      border-top: 98vh solid #0094C5;
+      border-right: 98vw solid transparent;
+    }
+  }
+  .intro {
+    background-color: rgba(255, 255, 255, 0.3);
+
+    h1 {
+      color: #E04703;
+    }
+    p {
+      color: #E04703;
+    }
+    .btn-default {
+      color: #E04703;
+
+      span {
+        
+      }
+    }
+  }
+}
+.gww-section {
+  // background: url(http://elkindnet.github.io/codedesign-onepage-starter-plus/img/7.jpg);
+  .intro {
+    background-color: rgba(0, 148, 197, 0.7);
+
+    h1 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+
+    .btn-default {
+      background-color: transparent;
+      border: 2px solid #fff;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+.contact-section {
+  background: url(../img/3.jpg);
+}
+.overlay {
+  padding: 150px 0;
+  height: 100%;
+
+  background: rgba(255,255,255,1);
+  /* Old Browsers */background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  /* FF3.6+ */background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(80%, rgba(255,255,255,0)));
+  /* Chrome, Safari4+ */background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  /* Opera 11.10+ */background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  /* IE 10+ */background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  /* IE6-9 */
+
+  display: table;
+  width: 100%;
+}
+.parallax {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+
+}
+
+@media(max-width:767px) {
+  .parallax, .overlay {
+    height: auto;
+    background-position: 50% 50%!important;
+  }
+  .overlay {
+    padding: 70px 0;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-default  .navbar-collapse {
+    background-color: #E04703;
+  }
+}
+
+// Video
+.hover-video {
+  border:6px solid #E04703;
+  opacity:.9;
+  transition:all .5s ease;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:20px
+}
+
+.hover-video:hover {
+  opacity:1
+}
+
+#play-pause {
+  -webkit-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  transition:all .5s ease;
+  width:0;
+  height:0;
+  border-left:63px solid #E04703;
+  border-top:40px solid transparent;
+  border-bottom:40px solid transparent;
+  border-right:20px solid transparent;
+  margin:0 auto;
+  position:relative;
+  margin-top:40px
+}
+
+.pause {
+  border-left:0 solid #E04703;
+  border-top:0 solid transparent;
+  border-bottom:0 solid transparent;
+  width:80px;
+  height:80px;
+  background:#E04703
+}
+
+// Background Video Player
+.bg-video {
+  position:fixed;
+  right:0;
+  bottom:0;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-100;
+  background-size:cover
 }

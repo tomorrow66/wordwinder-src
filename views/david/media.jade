@@ -1,4 +1,56 @@
 extends ../layout
-
+block beforeBody
+  - bodyClasses.push('david-media')
 block content
-  h1 David in the Media
+  section
+    .container
+      .row
+        .col-sm-12
+          h1 David in the Media
+          
+      .row 
+        .col-md-6 
+          iframe(width="560", height="315", src="https://www.youtube.com/embed/LS8FBb2NSiw", frameborder="0", allowfullscreen="")
+          h3.text-center
+            | The Morning Blend InterviewNBC Milwaukee - October 23, 2012
+        .col-md-6 
+          iframe(width="560", height="315", src="https://www.youtube.com/embed/O8hhmzqAU10", frameborder="0", allowfullscreen="")
+          h3.text-center
+            | Watch kids loving it.
+          
+      .row
+        .col-sm-6
+          .media-link
+            h2 CBS 4 in Davenport, IA ­ April 2, 2012 
+            p Local 4th Grade Tests Word Winder
+            a(href="#")
+          .media-link
+            h2 Prairie Advocate ­ March 28, 2012 
+            p WC 4th Graders Test One of the Best Classroom Word Games
+            a(href="#")    
+          .media-link
+            h2 Savanna Times Journal ­ March 28, 2012 
+            p Game creator visits West Carroll Primary School
+            a(href="#")
+          .media-link
+            h2 WCCI Radio Interview - March 22, 2012
+            p Interview at Carroll Elementary School in Savanna, IL
+            a(href="#")
+              
+        .col-sm-6
+          .media-link
+            h2 CBS 4 in Davenport, IA ­ April 2, 2012 
+            p Local 4th Grade Tests Word Winder
+            a(href="#")
+          .media-link
+            h2 Prairie Advocate ­ March 28, 2012 
+            p WC 4th Graders Test One of the Best Classroom Word Games
+            a(href="#")    
+          .media-link
+            h2 Savanna Times Journal ­ March 28, 2012 
+            p Game creator visits West Carroll Primary School
+            a(href="#")
+          .media-link
+            h2 WCCI Radio Interview - March 22, 2012
+            p Interview at Carroll Elementary School in Savanna, IL
+            a(href="#")

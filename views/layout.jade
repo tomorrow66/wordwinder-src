@@ -12,7 +12,7 @@ html
     block styles
       
     != css('main')
-  body(class=bodyClasses)
+  body(class=bodyClasses,id="#page-top", data-spy="scroll", data-target=".navbar-fixed-top")
     include partials/header
 
     include partials/flash

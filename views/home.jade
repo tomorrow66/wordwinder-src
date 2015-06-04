@@ -1,40 +1,77 @@
 extends layout
 
 block styles
-  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.css")
+  //- link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.css")
 
 block content
-  .home#fullpage
-    section.section.dlh#section0
-      .intro
-        h1 David L. Hoyt
-        h2 
-          | The man who puzzles America.
-        p
-          | ﻿David L. Hoyt is the most syndicated daily puzzle and word game creator in the world.
-        .btn.btn-default
-          a(href="/david") Learn More About David
-        
-    section.section.ww#section1
-      .ww-gfx(style="background-image: url('/images/ww/word_winder_board_gfx.svg')")
-        //- img(src="/images/ww/word_winder_board_gfx.svg", alt="")
-      .intro
-        h1 Word Winder
-        p 
-          | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
-        .btn.btn-default 
-          a(href="/word-winder") Learn More About Word Winder
-      
-    section.section.gww#section2
-      .intro
-        h1 Giant Word Winder
-        p 
-          | GIANT Word Winder® for the Classroom offers a unique game that changes the way kids learn, educators teach, and everybody plays. GIANT Word Winder® is a fun way for everyone to engage with learning in the classroom —as well as other environments, like your local library, church, or even your home.
-        .btn.btn-default 
-          a(href="/giant-word-winder") Learn More About Giant Word Winder
-        
-      .grid-full
-        .item(style="background-image: url(/images/gww/gww5.jpg)")
-          
+  section#david.david-section
+    //- .slant
+    .overlay
+      .container-fluid.site-wrapper-inner
+        .row
+          .col-md-5.col-md-offset-1
+            .intro
+              h1 David L. Hoyt
+              h2 
+                | The man who puzzles America.
+              p
+                | ﻿David L. Hoyt is the most syndicated daily puzzle and word game creator in the world.
+              a.btn.btn-default.btn-lg.page-scroll(href="/david")
+                span
+                  | Learn More About David 
+                i.fa.fa-lg.fa-arrow-circle-right
+              a.btn.btn-default.btn-lg.page-scroll(href="#ww")
+                span
+                  | Scroll down for Word Winder 
+                i.fa.fa-lg.fa-arrow-circle-down
+          .col-md-5
+            //- video(autoplay=false, loop="true", poster="videos/gww.jpg")
+            //-   source(src="videos/gww.mp4", type="video/mp4")
+            #david-video
+              p.hover-title 
+                | Hover over video to play
+              video.hover-video(width="100%", height="auto", preload="auto" control="false")
+                source(src="videos/david3.mp4", type="video/mp4")
+              #play-pause
+  
+  section#ww.ww-section
+    .slant
+    .overlay
+      .container-fluid.site-wrapper-inner
+        .row
+          .col-md-5.col-md-offset-1
+            .gfx-block
+              img(src="/images/ww/word_winder_board_gfx.svg", alt="")
+          .col-md-5
+            .intro
+              h1 Word Winder
+              p
+                | WORD WINDER™ is the game of winding words. Lay down your chips to form winding lines of winding words. Outrace your opponents and block their lines. Strategy & Cunning! Offense, Defense, Temporary Alliances and Countless Game Board Combinations! From the world’s most syndicated word game creator.​
+              a.btn.btn-default.btn-lg.page-scroll(href="/david")
+                span
+                  | Learn More About Word Winder 
+                i.fa.fa-lg.fa-arrow-circle-right
+              a.btn.btn-default.btn-lg.page-scroll(href="#gww")
+                span
+                  | Scroll down for Giant Word Winder 
+                i.fa.fa-lg.fa-arrow-circle-down
+  section#gww.gww-section
+    video.bg-video(width="100%", height="auto", preload="auto" autoplay loop muted control="false")
+      source(src="videos/gww.mp4", type="video/mp4")
+    .overlay
+      .container-fluid.site-wrapper-inner
+        .row
+          .col-md-6.col-md-offset-5
+            .intro
+              h1 Giant Word Winder
+              p 
+                | GIANT Word Winder® for the Classroom offers a unique game that changes the way kids learn, educators teach, and everybody plays. GIANT Word Winder® is a fun way for everyone to engage with learning in the classroom —as well as other environments, like your local library, church, or even your home.
+              a.btn.btn-default.btn-lg.page-scroll(href="/giant-word-winder")
+                span
+                  | Learn More About Giant Word Winder 
+                i.fa.fa-lg.fa-arrow-circle-right
+              a.btn.btn-default.btn-lg.page-scroll(href="#david")
+                span
+                  | Scroll back to the top 
+                i.fa.fa-lg.fa-arrow-circle-up    
 block scripts
-  script(src='/js/lib/jquery.fullPage.js')

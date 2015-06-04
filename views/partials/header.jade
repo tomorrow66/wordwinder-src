@@ -1,34 +1,21 @@
-header
-  .navbar.navbar-default.navbar-fixed-top
-    ul.nav.navbar-nav
-      li.dropdown
-        a#drop1.dropdown-toggle(href="#", data-toggle="dropdown", role="button")
-          | Menu
-          b.caret
-        ul.dropdown-menu(role="menu", aria-labelledby="drop1")
-          li(role="presentation")
-            a(href="/", role="menuitem") Home
-          li(role="presentation")
-            a(href="/david", role="menuitem") David L. Hoyt
-          li(role="presentation")
-            a(href="/word-winder", role="menuitem") Word Winder
-          li(role="presentation")
-            a(href="/giant-word-winder", role="menuitem") Giant Word Winder
-    .container
-      .navbar-header.branding
-        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href='/')
-          //- i.fa.fa-cube
-          | Word Winder Logo
-      .collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right
-          li(class=title=='Home'?'active':undefined)
-            a(href='/') Home
-          li(class=title=='Contact'?'active':undefined)
-            a(href='/contact') Contact
-          li
-            a(href='http://google.com', target='_blank') Blog
+nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+  .container-fluid
+    .navbar-header.page-scroll
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll(href="#david")
+        //- i.fa.fa-desktop
+        img.logo(src="images/logo/ww_neue_logo.png", alt="Word Winder Logo")
+    .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+      ul.nav.navbar-nav
+        li
+          a.page-scroll(href="#david") David
+        li
+          a.page-scroll(href="#ww") Word Winder
+        li
+          a.page-scroll(href="#gww") Giant Word Winder
+        li
+          a.page-scroll(href="#contact") Contact
