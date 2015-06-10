@@ -52,31 +52,23 @@ footer {
 }
 // Navbar
 // -------------------------
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 20px;
+  .icon-bar {
+    background-color: #fff;
+  }
+}
 
 .navbar-brand {
   display: block;
   font-size: 22px;
   line-height: 20px;
-  width: 200px;
-  @media (min-width: 420px) {
-    img{width: 125px;
-        margin-top: 12px;
-        margin-left: -10px;}
-  }
+  width: 130px;
+  margin-top: 8px;
   @media (min-width: 768px) {
-    img{width: 175px;
-        margin-top: 2px;
-        margin-left: 12px;}
-  }
-  @media (min-width: 992px) {
-    img{width: 220px;
-        margin-top: -3px;
-        margin-left: 16px;}
-  }
-  @media (min-width: 1200px) {
-    img{width: 240px;
-        margin-top: -1px;
-        margin-left: 115px;}
+    width: 190px;
   }
   font-weight: 400;
 
@@ -161,14 +153,21 @@ footer {
 
 .fa,
 [class^='ion-'] {
+  display: none;
   margin-right: 6px;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
 }
 
 // Buttons
 // -------------------------
 
 .btn-lg {
-  padding: 15px 20px;
+  padding: 5px;
+  @media (min-width: 768px) {
+    padding: 15px 20px;
+  }
   font-weight: bold;
 }
 
@@ -176,15 +175,19 @@ footer {
   background-color: transparent;
   border: 4px solid #FFD84B;
   border-radius: 5px;
-  width: auto;
-  @media (min-width: 992px) {
-
-
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
   }
 
   span {
+    display: inline-block;
     color: #E04703;
+    font-size: 12px;
     padding: 5px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -204,10 +207,6 @@ section {
     background-color: rgba(0, 0, 0, 0.3);
     color: inherit;
     max-width: 800px;
-    @media (min-width: 768px) {
-      max-width: 750px;
-      margin-left: -19px;
-    }
     padding: 20px;
     border-radius: 10px;
 
@@ -217,7 +216,13 @@ section {
   }
 
   .gfx-block {
-    width: 400px;
+    width: 250px;
+    @media (min-width: 768px) {
+      width: 350px;
+    }
+    @media (min-width: 992px) {
+      width: 400px;
+    }
     margin: 0 auto;
     overflow: hidden;
   }
@@ -235,6 +240,7 @@ section {
   background-image: url(/images/david/david4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 
   .slant {
     width: 0;
@@ -297,7 +303,12 @@ section {
   }
 }
 .gww-section {
-  // background: url(http://elkindnet.github.io/codedesign-onepage-starter-plus/img/7.jpg);
+  @media (max-width: 1200px) {
+    background-image: url(/images/gww/gww5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
   .intro {
     background-color: rgba(0, 148, 197, 0.7);
 
@@ -334,8 +345,6 @@ section {
   /* IE 10+ */background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
   /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
   /* IE6-9 */
-
-  display: table;
   width: 100%;
 }
 .parallax {
@@ -364,20 +373,6 @@ section {
     padding: 0;
   }
 
-}
-
-@media(max-width:767px) {
-  .parallax, .overlay {
-    height: auto;
-    background-position: 50% 50%!important;
-  }
-  .overlay {
-    padding: 70px 0;
-    background: rgba(255, 255, 255, 0.7);
-  }
-  .navbar-default  .navbar-collapse {
-    background-color: #E04703;
-  }
 }
 
 // Video
@@ -437,7 +432,7 @@ section {
   right:0;
   bottom:0;
   min-width:100%;
-  min-height:100%;
+  min-height:100vh;
   width:auto;
   height:auto;
   z-index:-100;
@@ -572,40 +567,9 @@ section {
       text-decoration: underline;
     }
   }
-  /*@media (min-width: 420px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  @media (min-width: 768px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  @media (min-width: 992px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }*/
 }
 .video{
   width: 100%;
   margin-left:auto;
   margin-right:auto;
-  @media (min-width: 420px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  @media (min-width: 768px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  @media (min-width: 992px) {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
 }
