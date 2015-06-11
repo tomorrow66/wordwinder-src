@@ -52,13 +52,26 @@ footer {
 }
 // Navbar
 // -------------------------
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 20px;
+  .icon-bar {
+    background-color: #fff;
+  }
+}
 
 .navbar-brand {
   display: block;
   font-size: 22px;
   line-height: 20px;
-  width: 300px;
+  width: 130px;
+  margin-top: 8px;
+  @media (min-width: 768px) {
+    width: 190px;
+  }
   font-weight: 400;
+
 }
 
 .navbar-brand {
@@ -76,7 +89,13 @@ footer {
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
   line-height: 38px;
   &:hover {
     color: #FFD84B;
@@ -107,6 +126,10 @@ footer {
 
 .util-nav {
   margin-right: 20px;
+  float: left;
+  /*@media (min-width: 768px) {
+    float:left;
+  }*/
 }
 
 // Alerts
@@ -130,14 +153,21 @@ footer {
 
 .fa,
 [class^='ion-'] {
+  display: none;
   margin-right: 6px;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
 }
 
 // Buttons
 // -------------------------
 
 .btn-lg {
-  padding: 15px 20px;
+  padding: 5px;
+  @media (min-width: 768px) {
+    padding: 15px 20px;
+  }
   font-weight: bold;
 }
 
@@ -145,10 +175,19 @@ footer {
   background-color: transparent;
   border: 4px solid #FFD84B;
   border-radius: 5px;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
+  }
 
   span {
+    display: inline-block;
     color: #E04703;
+    font-size: 12px;
     padding: 5px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -177,7 +216,13 @@ section {
   }
 
   .gfx-block {
-    width: 400px;
+    width: 250px;
+    @media (min-width: 768px) {
+      width: 350px;
+    }
+    @media (min-width: 992px) {
+      width: 400px;
+    }
     margin: 0 auto;
     overflow: hidden;
   }
@@ -195,6 +240,7 @@ section {
   background-image: url(/images/david/david4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 
   .slant {
     width: 0;
@@ -257,7 +303,12 @@ section {
   }
 }
 .gww-section {
-  // background: url(http://elkindnet.github.io/codedesign-onepage-starter-plus/img/7.jpg);
+  @media (max-width: 1200px) {
+    background-image: url(/images/gww/gww5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
   .intro {
     background-color: rgba(0, 148, 197, 0.7);
 
@@ -294,8 +345,6 @@ section {
   /* IE 10+ */background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
   /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
   /* IE6-9 */
-
-  display: table;
   width: 100%;
 }
 .parallax {
@@ -326,20 +375,6 @@ section {
 
 }
 
-@media(max-width:767px) {
-  .parallax, .overlay {
-    height: auto;
-    background-position: 50% 50%!important;
-  }
-  .overlay {
-    padding: 70px 0;
-    background: rgba(255, 255, 255, 0.7);
-  }
-  .navbar-default  .navbar-collapse {
-    background-color: #E04703;
-  }
-}
-
 // Video
 .hover-video {
   border:6px solid #E04703;
@@ -350,6 +385,16 @@ section {
   display:block;
   margin-top:20px;
   border-radius: 5px;
+  @media (min-width: 768px) {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  @media (min-width: 420px) {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 
 .hover-video:hover {
@@ -387,14 +432,13 @@ section {
   right:0;
   bottom:0;
   min-width:100%;
-  min-height:100%;
+  min-height:100vh;
   width:auto;
   height:auto;
   z-index:-100;
   background-size:cover
 }
 
-//
 .david-more {
   margin-top: 50px;
 }
@@ -439,6 +483,12 @@ section {
   margin: 40px 0;
   &.dark {
     color: #444;
+  }
+  width: auto;
+
+  @media (min-width:420) {
+    width: 400px;
+    margin-top: -20px;
   }
 }
 
@@ -517,4 +567,9 @@ section {
       text-decoration: underline;
     }
   }
+}
+.video{
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
 }

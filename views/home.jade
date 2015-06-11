@@ -41,8 +41,7 @@ block content
                   | Scroll down for Word Winder 
                 i.fa.fa-lg.fa-arrow-circle-down
           .col-md-5
-            //- video(autoplay=false, loop="true", poster="videos/gww.jpg")
-            //-   source(src="videos/gww.mp4", type="video/mp4")
+            
             #david-video
               p.hover-title 
                 | Hover over video to play
@@ -73,7 +72,7 @@ block content
                   | Scroll down for Giant Word Winder 
                 i.fa.fa-lg.fa-arrow-circle-down
   section#gww.gww-section
-    video.bg-video(width="100%", height="auto", preload="auto" autoplay loop muted control="false")
+    video.bg-video.hidden-xs(width="100%", height="100vh", preload="auto" autoplay loop muted control="false")
       source(src="videos/gww.mp4", type="video/mp4")
     .overlay
       .container-fluid.site-wrapper-inner
