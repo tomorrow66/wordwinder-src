@@ -37,19 +37,19 @@
     });
 
     // Custom Scroll
-    $("body").onepage_scroll({
-      sectionContainer: "section",
-      animationTime: 2000,
-      easing: "cubic-bezier(0.680, -0.550, 0.265, 1.550)"
-    });
-    //jQuery to collapse the navbar on scroll
-    $(window).scroll(function() {
-      if ($('.navbar').offset().top > 50) {
-        $('.navbar-fixed-top').addClass('top-nav-collapse');
-      } else {
-        $('.navbar-fixed-top').removeClass('top-nav-collapse');
-      }
-    });
+    // $("body").onepage_scroll({
+    //   sectionContainer: "section",
+    //   animationTime: 2000,
+    //   easing: "cubic-bezier(0.680, -0.550, 0.265, 1.550)"
+    // });
+    // //jQuery to collapse the navbar on scroll
+    // $(window).scroll(function() {
+    //   if ($('.navbar').offset().top > 50) {
+    //     $('.navbar-fixed-top').addClass('top-nav-collapse');
+    //   } else {
+    //     $('.navbar-fixed-top').removeClass('top-nav-collapse');
+    //   }
+    // });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -57,91 +57,42 @@
     });
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-      $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-      });
-    });
+    // $(function() {
+    //   $('a.page-scroll').bind('click', function(event) {
+    //     var $anchor = $(this);
+    //     $('html, body').stop().animate({
+    //       scrollTop: $($anchor.attr('href')).offset().top
+    //     }, 1500, 'easeInOutExpo');
+    //     event.preventDefault();
+    //   });
+    // });
 
-    $(document).ready(function(){
-      $window = $(window);
-      $('section[data-type="background"]').each(function(){
-        var $scroll = $(this);
-        $(window).scroll(function() {
-          var yPos = -(($window.scrollTop() - $scroll.offset().top) / $scroll.data('speed'));
-          var coords = '50% '+ yPos + 'px';
-          $scroll.css({ backgroundPosition: coords });
-        });
-      });
-    });
+    // $(document).ready(function(){
+    //   $window = $(window);
+    //   $('section[data-type="background"]').each(function(){
+    //     var $scroll = $(this);
+    //     $(window).scroll(function() {
+    //       var yPos = -(($window.scrollTop() - $scroll.offset().top) / $scroll.data('speed'));
+    //       var coords = '50% '+ yPos + 'px';
+    //       $scroll.css({ backgroundPosition: coords });
+    //     });
+    //   });
+    // });
     /* Create HTML5 element for IE */
-    document.createElement("section");
+    // document.createElement("section");
 
 
     // Fullpage.js
-    $('.home#fullpage').fullpage({
-      anchors: ['david', 'word-winder', 'giant-word-winder'],
-      sectionsColor: ['#FFFFFF', '#FFFFFF', '#E14603'],
-      navigation: true,
-      navigationPosition: 'right',
-      navigationTooltips: ['David L. Hoyt', 'Word Winder', 'Giant Word Winder'],
-      loopBottom: true,
-      responsive: 900,
-      css3: true
-      // afterLoad: function(anchorLink, index){
-      //
-      //   //section 1
-      //   if(index == 1){
-      //     //moving the image
-      //     // $('.dlh').find('img').delay(500).animate({
-      //     //   left: '0%'
-      //     // }, 1500, 'easeOutExpo');
-      //
-      //     console.log('Index 1');
-      //     $('#section0').find('p').first().fadeIn(1800, function(){
-      //       $('#section0').find('p').last().fadeIn(1800);
-      //     });
-      //
-      //   }
-      //
-      //   if(index == 2){
-      //     //moving the image
-      //     // $('.ww').find('img').delay(500).animate({
-      //     //   left: '0%'
-      //     // }, 1500, 'easeOutExpo');
-      //     console.log('Index 2');
-      //     $('.ww').find('p').first().fadeIn(1800, function(){
-      //       $('.ww').find('p').last().fadeIn(1800);
-      //     });
-      //
-      //   }
-      //
-      //   if(index == 3){
-      //     //moving the image
-      //     // $('.gww').find('img').delay(500).animate({
-      //     //   left: '0%'
-      //     // }, 1500, 'easeOutExpo');
-      //
-      //     console.log('Index 3');
-      //     $('.gww').find('p').first().fadeIn(1800, function(){
-      //       $('.gww').find('p').last().fadeIn(1800);
-      //     });
-      //
-      //   }
-      //
-      //   // //section 3
-      //   // if(anchorLink == '3rdPage'){
-      //   //   //moving the image
-      //   //   $('.gww').find('.intro').delay(500).animate({
-      //   //     left: '0%'
-      //   //   }, 1500, 'easeOutExpo');
-      //   // }
-      // }
-    });
+    // $('.home#fullpage').fullpage({
+    //   anchors: ['david', 'word-winder', 'giant-word-winder'],
+    //   sectionsColor: ['#FFFFFF', '#FFFFFF', '#E14603'],
+    //   navigation: true,
+    //   navigationPosition: 'right',
+    //   navigationTooltips: ['David L. Hoyt', 'Word Winder', 'Giant Word Winder'],
+    //   loopBottom: true,
+    //   responsive: 900,
+    //   css3: true
+    // });
 
     // Testimonials
     (function(){
@@ -180,13 +131,13 @@
   });
 
   // Parallax Video
-  $(document).ready(function() {
-    $('#david-video').backgroundVideo({
-      pauseVideoOnViewLoss: true,
-      parallaxOptions: {
-        effect: 1.9
-      }
-    });
-  });
+  // $(document).ready(function() {
+  //   $('#david-video').backgroundVideo({
+  //     pauseVideoOnViewLoss: true,
+  //     parallaxOptions: {
+  //       effect: 1.9
+  //     }
+  //   });
+  // });
 
 }());

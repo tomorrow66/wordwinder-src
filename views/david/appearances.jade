@@ -1,4 +1,9 @@
 extends ../layout
-
+block beforeBody
+  - bodyClasses.push('david-appearances')
 block content
-  h1 David's Appearances
+  section.full
+    .container-fluid.site-wrapper-inner
+      .row
+        .col-sm-12
+          h1 David's Appearances
