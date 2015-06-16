@@ -130,6 +130,21 @@
 
   });
 
+  $(function() {
+  	$(".collapsed").bind('click',function() {
+  		var _this = $(this);
+
+  		// Expand the current link
+  		_this.toggleClass('active', 5);
+  		_this.next().toggleClass('closed', 500);
+  		// Contract the others and set off the 'active' state.
+  		$(".collapsed").not(_this).each(function() {
+  			$(this).next().addClass('closed', 500);
+  			$(this).removeClass('active', 5);
+  		});
+  	});
+  });
+
   // Parallax Video
   // $(document).ready(function() {
   //   $('#david-video').backgroundVideo({
