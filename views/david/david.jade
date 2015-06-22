@@ -3,6 +3,13 @@ block beforeBody
   - bodyClasses.push('david')
 block content
   section#david-l-hoyt.full(style="background-color:#f4f7f8;")
+    .side-nav.hidden-xs.hidden-sm.affix.pull-right
+      ul.nav.nav-stacked
+        li(role="presentation")
+          a(href="/games-and-puzzles") Games And Puzzles
+        li(role="presentation")
+          a(href="/partnerships") Partnerships
+          
     ul.nav.nav-justified.secondary-nav.col-md-10
       li(role="presentation")
         a(href="#david-l-hoyt") David
@@ -12,7 +19,7 @@ block content
         a(href="#closer-look") A Closer Look
       li(role="presentation")
         a(href="#media") Media
-    //- .bgImg
+
     .container-fluid.site-wrapper-inner
       .row
         .col-md-8.col-md-offset-3

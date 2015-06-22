@@ -128,9 +128,31 @@ footer {
 .util-nav {
   margin-right: 35px;
   float: left;
-  /*@media (min-width: 768px) {
-    float:left;
-  }*/
+  li {
+    margin-bottom: 0!important;
+  }
+}
+
+.side-nav {
+  background-color: #006990;
+  right: 0;
+  z-index: 1;
+  width: 150px;
+  height: 100vh;
+  padding-top: 40px;
+  margin-top: 3px;
+  border-left: 3px solid #FFD84B;
+  li {
+    text-align: left;
+    a {
+      color: #fff;
+      background-color: rgba(224,71,3, 1);
+      &:hover {
+        color: rgba(224,71,3, 1);
+        background-color: #fff;
+      }
+    }
+  }
 }
 
 .secondary-nav {
