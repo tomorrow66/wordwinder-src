@@ -2,11 +2,20 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('david')
 block content
-  section.full(style="background-color:#f4f7f8;")
-    .slant
+  section#david-l-hoyt.full(style="background-color:#f4f7f8;")
+    ul.nav.nav-justified.secondary-nav.col-md-10
+      li(role="presentation")
+        a(href="#david-l-hoyt") David
+      li(role="presentation")
+        a(href="#more-about-david") More About David
+      li(role="presentation")
+        a(href="#closer-look") A Closer Look
+      li(role="presentation")
+        a(href="#media") Media
+    .bgImg
     .container-fluid.site-wrapper-inner
       .row
-        .col-md-5.col-md-offset-1
+        .col-md-8.col-md-offset-3
           .intro
             .david-intro
               h1 DAVID L. HOYT
@@ -24,152 +33,159 @@ block content
                   | Jumble
                 | , the most syndicated daily word game in the world, seen in more than 600 newspapers each day
                 
+            #david-video
+              p.hover-title 
+                | Hover over video to play
+              video.hover-video(width="100%", height="auto", preload="auto" control="false")
+                source(src="videos/david2.mp4", type="video/mp4")
+              #play-pause
                 
-            .david-intro-more
-              h2.blue More About David
-              p 
-                | The newest of David’s endeavors is JUST 2 WORDS™; its' fun and fast game play makes it perfect for mobile devices! It's now available for download on iPhone, Android, Nook, and more.
-
-              p
-                | Jumble is one of the most beloved and successful word games in history. Created in 1954, it has been widely syndicated and licensed to become the most recognizable scrambled word game in the world. David has been the author of the Jumble since 2011 and 
-                a(href="http://www.brainstorm-designs.com/#!about/cy2g")
-                  | Jeff Knureck 
-                | as been drawing the Jumble since 2008.
-                
-              p 
-                | Roughly 70 million people have access to Jumble every day through more than 600 U.S. and international publications. It is available in books, on mobile applications and on the web. Classic Jumble and newer variations, such as Jumble Crosswords, Jumble Word Vault, Jumble Solitaire, Jumble Jong and others are also favorites.
-              
-              p 
-                | Paragraph to talk about David's social media presence...
-              
-              ul
-                li 
-                  i.fa.fa-facebook-official 
-                    | Facebook:
-                  a(href="https://facebook.com/DavidLHoyt") David L Hoyt
-                li 
-                  i.fa.fa-twitter 
-                    | Twitter: 
-                  a(href="https://twitter.com/DavidLHoyt") @DavidLHoyt
-                li 
-                  i.fa.fa-instagram 
-                    | Instagram: 
-                  a(href="https://instagram.com/DavidLHoyt") @DavidLHoyt
-        .col-md-5
-          #david-video
-            p.hover-title 
-              | Hover over video to play
-            video.hover-video(width="100%", height="auto", preload="auto" control="false")
-              source(src="videos/david2.mp4", type="video/mp4")
-            #play-pause
-              
-          .david-more
-            .row
-              .col-sm-6
-                .link-wrap
-                  i.fa.fa-book
-                  a(href="http://www.jumble.com/")
-                    h2 JUST 2 WORDS
-                    h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                  
-              .col-sm-6
-                .link-wrap
-                  i.fa.fa-book
-                  a(href="http://www.just-2-words.com/")
-                    h2 JUMBLE
-                    h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                  
-            .row
-              .col-sm-6
-                .link-wrap
-                  i.fa.fa-book
-                  a(href="")
-                    h2 Some Link
-                    h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                  
-              .col-sm-6
-                .link-wrap
-                  i.fa.fa-book
-                  a(href="")
-                    h2 Some Link
-                    h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            .david-more
+              .row
+                .col-sm-6
+                  .link-wrap
+                    i.fa.fa-book
+                    a(href="http://www.jumble.com/")
+                      h2 JUST 2 WORDS
+                      h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
                     
-      .toggle-more
-        .row 
-          .col-sm-5.col-md-offset-1
-            .items
-              a.collapsed ONLINE GAMES
-              .closed
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordwinder.jsp", target='_blank') JUMBLE
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/dailyjumble.jsp", target='_blank') MERRIAM WEBSTER WORD WINDER CROSSWINDER
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/jumblecrosswords.jsp", target='_blank') JUMBLE CROSSWORDS
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundup.jsp", target='_blank') WORD ROUNDUP
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundupchallenge.jsp", target='_blank') WORD ROUNDUP CHALLENGE
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordrounduphollywood.jsp", target='_blank') WORD ROUNDUP: HOLLYWOOD EDITION
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundupfrenzy.jsp", target='_blank') WORD ROUNDUP FRENZY
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordrounduptrailblazer.\
-                  jsp", target='_blank') WORD ROUNDUP TRAILBLAZER
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordrounduppardners.\
-                  jsp", target='_blank') WORD ROUNDUP PARDNERS
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingo.jsp", target='_blank') WORD ROUNDUP BINGO
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingomini.jsp", target='_blank') WORD ROUNDUP BINGO EXPRESS
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingoextreme.jsp", target='_blank') WORD ROUNDUP BINGO EXTREME
-                .item
-                  a(href="http://puzzles.usatoday.com/updownwords/", target='_blank') USA TODAY UP &#38; DOWN WORDS
-                .item
-                  a(href="http://puzzles.usatoday.com/wordroundup/", target='_blank') USA TODAY WORD ROUNDUP
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/picturiffic.jsp", target='_blank') PICTURIFFIC
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/picturifficfactsandfigures.\
-                  jsp", target='_blank') PICTURIFFIC FACTS &#38; FIGURES
-                .item
-                  a(href="game/wordwinder/index.htm", target='_blank') WORD WINDER FINDER
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/thisdayinhistory.\
-                  jsp", target='_blank') THIS DAY HISTORY: THE GAME
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/thisdayinushistory.\
-                  jsp", target='_blank') THIS DAY U.S. HISTORY: THE GAME
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/thisdayinclassicrockhistory.\
-                  jsp", target='_blank') THIS DAY IN CLASSIC ROCK HISTORY: THE GAME
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/findempoker.jsp", target='_blank') FIND "EM POKER
-                .item
-                  a(href="http://www.bigfishgames.com/onlinegames/\
-                  5044/findem21/\
-                  index.html", target='_blank') FIND "EM 21
-                .item
-                  a(href="http://www.shockwave.com/gamelanding/jumblewordvault.jsp", target='_blank') JUMBLE WORD VAULT
-          .col-sm-5  
-            .items
-              a.collapsed MOBILE GAMES
-              .closed
-                .item
-                  a(href="http://www.just2words.com/", target='_blank') JUST 2 WORDS
-                .item
-                  a(href="http://www.justjumble.com/", target='_blank') JUST JUMBLE
-                .item
-                  a(href="http://www.just2fun.com/", target='_blank') JUST 2 FUN
-                .item
-                  a(href="https://itunes.apple.com/us/app/wordwinderhd/id541130015?mt=8", target='_blank') WORD WINDER
-                .item
-                  a(href="https://itunes.apple.com/us/app/tictacdoku/\
-                  id757466913?mt=8", target='_blank') TICTACKDOKU             
-  section.full(style="background-color:#006990;")
+                .col-sm-6
+                  .link-wrap
+                    i.fa.fa-book
+                    a(href="http://www.just-2-words.com/")
+                      h2 JUMBLE
+                      h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    
+              .row
+                .col-sm-6
+                  .link-wrap
+                    i.fa.fa-book
+                    a(href="")
+                      h2 Some Link
+                      h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    
+                .col-sm-6
+                  .link-wrap
+                    i.fa.fa-book
+                    a(href="")
+                      h2 Some Link
+                      h3 Blurb about ... Lorem ipsum dolor sit amet, consectetur adipisicing elit              
+              .toggle-more
+                .row 
+                  .col-sm-5.col-md-offset-1
+                    .items
+                      a.collapsed ONLINE GAMES
+                      .closed
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordwinder.jsp", target='_blank') JUMBLE
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/dailyjumble.jsp", target='_blank') MERRIAM WEBSTER CROSSWINDER
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/jumblecrosswords.jsp", target='_blank') JUMBLE CROSSWORDS
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundup.jsp", target='_blank') WORD ROUNDUP
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundupchallenge.jsp", target='_blank') WORD ROUNDUP CHALLENGE
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordrounduphollywood.jsp", target='_blank') WORD ROUNDUP: HOLLYWOOD EDITION
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundupfrenzy.jsp", target='_blank') WORD ROUNDUP FRENZY
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordrounduptrailblazer.\
+                          jsp", target='_blank') WORD ROUNDUP TRAILBLAZER
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordrounduppardners.\
+                          jsp", target='_blank') WORD ROUNDUP PARDNERS
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundupbingo.jsp", target='_blank') WORD ROUNDUP BINGO
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundupbingomini.jsp", target='_blank') WORD ROUNDUP BINGO EXPRESS
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/wordroundupbingoextreme.jsp", target='_blank') WORD ROUNDUP BINGO EXTREME
+                        .item
+                          a(href="http://puzzles.usatoday.com/updownwords/", target='_blank') USA TODAY UP &#38; DOWN WORDS
+                        .item
+                          a(href="http://puzzles.usatoday.com/wordroundup/", target='_blank') USA TODAY WORD ROUNDUP
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/picturiffic.jsp", target='_blank') PICTURIFFIC
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/picturifficfactsandfigures.\
+                          jsp", target='_blank') PICTURIFFIC FACTS &#38; FIGURES
+                        .item
+                          a(href="game/wordwinder/index.htm", target='_blank') WORD WINDER FINDER
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/thisdayinhistory.\
+                          jsp", target='_blank') THIS DAY HISTORY: THE GAME
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/thisdayinushistory.\
+                          jsp", target='_blank') THIS DAY U.S. HISTORY: THE GAME
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/thisdayinclassicrockhistory.\
+                          jsp", target='_blank') THIS DAY IN CLASSIC ROCK HISTORY: THE GAME
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/findempoker.jsp", target='_blank') FIND "EM POKER
+                        .item
+                          a(href="http://www.bigfishgames.com/onlinegames/\
+                          5044/findem21/\
+                          index.html", target='_blank') FIND "EM 21
+                        .item
+                          a(href="http://www.shockwave.com/gamelanding/jumblewordvault.jsp", target='_blank') JUMBLE WORD VAULT 
+                          
+                  .col-sm-5
+                    .items
+                      a.collapsed MOBILE GAMES
+                      .closed
+                        .item
+                          a(href="http://www.just2words.com/", target='_blank') JUST 2 WORDS
+                        .item
+                          a(href="http://www.justjumble.com/", target='_blank') JUST JUMBLE
+                        .item
+                          a(href="http://www.just2fun.com/", target='_blank') JUST 2 FUN
+                        .item
+                          a(href="https://itunes.apple.com/us/app/wordwinderhd/id541130015?mt=8", target='_blank') WORD WINDER
+                        .item
+                          a(href="https://itunes.apple.com/us/app/tictacdoku/\
+                          id757466913?mt=8", target='_blank') TICTACKDOKU 
+              
+              
+                              
+  section#more-about-david.full(style="background-color:#0198CF;")
+    .container-fluid.site-wrapper-inner
+      .row
+        .col-sm-5.col-md-offset-1
+          h1.headline.white
+            | More About David
+      .row
+        .col-md-10.col-sm-offset-1 
+          p.white 
+            | The newest of David’s endeavors is JUST 2 WORDS™; its' fun and fast game play makes it perfect for mobile devices! It's now available for download on iPhone, Android, Nook, and more.
+
+          p.white
+            | Jumble is one of the most beloved and successful word games in history. Created in 1954, it has been widely syndicated and licensed to become the most recognizable scrambled word game in the world. David has been the author of the Jumble since 2011 and 
+            a(href="http://www.brainstorm-designs.com/#!about/cy2g")
+              | Jeff Knureck 
+            | as been drawing the Jumble since 2008.
+            
+          p.white 
+            | Roughly 70 million people have access to Jumble every day through more than 600 U.S. and international publications. It is available in books, on mobile applications and on the web. Classic Jumble and newer variations, such as Jumble Crosswords, Jumble Word Vault, Jumble Solitaire, Jumble Jong and others are also favorites.
+          
+          p.white 
+            | Paragraph to talk about David's social media presence... 
+            
+          ul
+            li.white 
+              i.fa.fa-facebook-official 
+                | Facebook: 
+              a.white(href="https://facebook.com/DavidLHoyt") David L Hoyt
+            li.white 
+              i.fa.fa-twitter 
+                | Twitter: 
+              a.white(href="https://twitter.com/DavidLHoyt") @DavidLHoyt
+            li.white 
+              i.fa.fa-instagram 
+                | Instagram: 
+              a.white(href="https://instagram.com/DavidLHoyt") @DavidLHoyt  
+  section#closer-look.full(style="background-color:#006990;")
     .container-fluid.site-wrapper-inner
       .row
         .col-sm-5.col-md-offset-1
@@ -196,7 +212,7 @@ block content
             a(href="david/partnerships") Learn More..
               
        
-  section.full(style="background-color:#f4f7f8;")
+  section#media.full(style="background-color:#f4f7f8;")
     .container-fluid.site-wrapper-inner
       .row
         .col-sm-5.col-md-offset-1

@@ -67,7 +67,7 @@ footer {
   font-size: 22px;
   line-height: 20px;
   width: 130px;
-  margin-top: 8px;
+  margin-top: 0;
   @media (min-width: 768px) {
     width: 190px;
   }
@@ -126,11 +126,27 @@ footer {
 }
 
 .util-nav {
-  margin-right: 20px;
+  margin-right: 35px;
   float: left;
   /*@media (min-width: 768px) {
     float:left;
   }*/
+}
+
+.secondary-nav {
+  position: fixed;
+  top: 111px;
+  background-color: rgba(224,71,3, 0.6);
+  color: #FFF;
+  z-index: 1;
+  // border-radius: 5px;
+
+  a {
+    color: #FFF;
+    &:hover {
+      background-color: rgba(224,71,3, 0.7)!important;
+    }
+  }
 }
 
 // Alerts

@@ -1,13 +1,34 @@
 // David page styles
 body.david {
   section {
+    &#david-l-hoyt {
+      // background-image: url(/images/david/david-peek_body.png);
+      // background-repeat: no-repeat;
+      // background-size: contain;
+      // background-position: left bottom;
+
+      .bgImg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(/images/david/david-peek_body.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left bottom;
+      }
+    }
     // padding-bottom: 0;
   }
   .david-intro {
     h1 {
-
+      color: #0094C5;
     }
     h2 {
+      color: #0094C5;
+    }
+    p {
       color: #0094C5;
     }
   }

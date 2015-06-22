@@ -145,6 +145,16 @@
   	});
   });
 
+  // $(".secondary-nav").hide();
+  // $(window).scroll(function() {
+  //   if ($(window).scrollTop() > 100) {
+  //     $(".secondary-nav").fadeIn("slow");
+  //   }
+  //   else {
+  //     $(".secondary-nav").fadeOut("fast");
+  //   }
+  // });
+
   // Parallax Video
   // $(document).ready(function() {
   //   $('#david-video').backgroundVideo({
