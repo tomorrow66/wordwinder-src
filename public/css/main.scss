@@ -223,7 +223,7 @@ section {
   .intro {
     background-color: rgba(0, 0, 0, 0.3);
     color: inherit;
-    max-width: 800px;
+    max-width: 100%;
     padding: 20px;
     border-radius: 10px;
 
@@ -589,4 +589,8 @@ section {
   width: 100%;
   margin-left:auto;
   margin-right:auto;
+}
+
+.hover-title {
+  text-align: center;
 }
