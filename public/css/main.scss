@@ -283,7 +283,7 @@ section {
   }
 }
 .david-section {
-  background-image: url(/images/david/david4.jpg);
+  background-image: url(/images/david/david6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -302,7 +302,27 @@ section {
   }
 
   .intro {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    h1 {
+      color: #FFD84B;
+    }
+    h2 {
+      color: #FFF;
+    }
+    p {
+      color: #FFF;
+    }
+    .btn-default {
+      background-color: transparent;
+      border-color: #FFD84B;
+      &:hover {
+        border-color: #FFD84B;
+      }
+      span {
+        color: #FFF;
+      }
+    }
   }
 }
 .ww-section {
@@ -622,4 +642,12 @@ section {
 
 .hover-title {
   text-align: center;
+}
+
+
+// gamepad
+.game{
+  font-size: 42px;
+  line-height: 66px;
+
 }

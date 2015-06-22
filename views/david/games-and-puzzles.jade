@@ -2,21 +2,100 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('david-games-and-puzzles')
 block content
-  section.full
+  section.full(style="background-color:#006990;")
     .container-fluid.site-wrapper-inner
       .row
         .col-sm-12
           h1 Games And Puzzles
-          
       .row
         .col-md-10.col-md-offset-1
           .header
+            img.text-center(src='http://placehold.it/1600x500')
           //- Header Image
           
-        .row
-          .col-md-4
-            //- Thumbnails  
-          .col-md-4
-            //- Thumbnails
-          .col-md-4
-            //- Thumbnails
+      .row
+        .col-md-10.col-md-offset-1
+          img(src="/images/david/Product_Banner.png")    
+  section.full(style="background-color:#f4f7f8;")
+    .container-fluid.site-wrapper-inner    
+      .row
+        .col-md-2.col-md-offset-5
+          .link-wrap
+            i.fa.fa-gamepad
+      .toggle-more
+        .row 
+          .col-sm-5.col-md-offset-1
+            .items
+              a.collapsed ONLINE GAMES
+              .closed
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordwinder.jsp", target='_blank') JUMBLE
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/dailyjumble.jsp", target='_blank') MERRIAM WEBSTER CROSSWINDER
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/jumblecrosswords.jsp", target='_blank') JUMBLE CROSSWORDS
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundup.jsp", target='_blank') WORD ROUNDUP
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundupchallenge.jsp", target='_blank') WORD ROUNDUP CHALLENGE
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordrounduphollywood.jsp", target='_blank') WORD ROUNDUP: HOLLYWOOD EDITION
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundupfrenzy.jsp", target='_blank') WORD ROUNDUP FRENZY
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordrounduptrailblazer.\
+                  jsp", target='_blank') WORD ROUNDUP TRAILBLAZER
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordrounduppardners.\
+                  jsp", target='_blank') WORD ROUNDUP PARDNERS
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingo.jsp", target='_blank') WORD ROUNDUP BINGO
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingomini.jsp", target='_blank') WORD ROUNDUP BINGO EXPRESS
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/wordroundupbingoextreme.jsp", target='_blank') WORD ROUNDUP BINGO EXTREME
+                .item
+                  a(href="http://puzzles.usatoday.com/updownwords/", target='_blank') USA TODAY UP &#38; DOWN WORDS
+                .item
+                  a(href="http://puzzles.usatoday.com/wordroundup/", target='_blank') USA TODAY WORD ROUNDUP
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/picturiffic.jsp", target='_blank') PICTURIFFIC
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/picturifficfactsandfigures.\
+                  jsp", target='_blank') PICTURIFFIC FACTS &#38; FIGURES
+                .item
+                  a(href="game/wordwinder/index.htm", target='_blank') WORD WINDER FINDER
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/thisdayinhistory.\
+                  jsp", target='_blank') THIS DAY HISTORY: THE GAME
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/thisdayinushistory.\
+                  jsp", target='_blank') THIS DAY U.S. HISTORY: THE GAME
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/thisdayinclassicrockhistory.\
+                  jsp", target='_blank') THIS DAY IN CLASSIC ROCK HISTORY: THE GAME
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/findempoker.jsp", target='_blank') FIND "EM POKER
+                .item
+                  a(href="http://www.bigfishgames.com/onlinegames/\
+                  5044/findem21/\
+                  index.html", target='_blank') FIND "EM 21
+                .item
+                  a(href="http://www.shockwave.com/gamelanding/jumblewordvault.jsp", target='_blank') JUMBLE WORD VAULT 
+                  
+          .col-sm-5
+            .items
+              a.collapsed MOBILE GAMES
+              .closed
+                .item
+                  a(href="http://www.just2words.com/", target='_blank') JUST 2 WORDS
+                .item
+                  a(href="http://www.justjumble.com/", target='_blank') JUST JUMBLE
+                .item
+                  a(href="http://www.just2fun.com/", target='_blank') JUST 2 FUN
+                .item
+                  a(href="https://itunes.apple.com/us/app/wordwinderhd/id541130015?mt=8", target='_blank') WORD WINDER
+                .item
+                  a(href="https://itunes.apple.com/us/app/tictacdoku/\
+                  id757466913?mt=8", target='_blank') TICTACKDOKU 
+          
