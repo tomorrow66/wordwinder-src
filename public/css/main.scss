@@ -142,17 +142,21 @@ footer {
   z-index: 1;
   width: 150px;
   height: 100vh;
-  padding-top: 40px;
+  // padding-top: 40px;
   margin-top: 3px;
   border-left: 3px solid #FFD84B;
   li {
     text-align: left;
+    border-top: 1px solid #111;
+    &:last-child {
+      border-bottom: 1px solid #111;
+    }
     a {
       color: #fff;
-      background-color: rgba(224,71,3, 1);
       &:hover {
-        color: rgba(224,71,3, 1);
-        background-color: #fff;
+        color: #fff;
+        text-decoration: underline;
+        background-color: #006990;
       }
     }
   }
