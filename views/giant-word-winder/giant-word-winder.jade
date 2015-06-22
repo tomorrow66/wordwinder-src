@@ -2,7 +2,16 @@ extends ../layout
 block beforeBody
   - bodyClasses.push('gww')
 block content
-  section.full(style="background-image: url(/images/gww/gww2.jpg);min-height: 90vh;background-size:cover;")
+  section#Giant-word-winder.full(style="background-image: url(/images/gww/gww2.jpg);min-height: 90vh;background-size:cover;")
+    ul.nav.nav-justified.secondary-nav.col-md-10
+      li(role="presentation")
+        a(href="#Giant-word-winder") Giant Word Winder
+      li(role="presentation")
+        a(href="#Educational") Educational Benefits
+      li(role="presentation")
+        a(href="#Meet-the-Inventor") Meet the Inventor
+      li(role="presentation")
+        a(href="#Quotes") Quotes from Experts
     .container-fluid.site-wrapper-inner
       .row
         .col-md-5.col-md-offset-1
@@ -35,7 +44,7 @@ block content
               source(src="videos/gww.mp4", type="video/mp4")
             #play-pause
           
-  section.full(style="")
+  section#Educational.full(style="")
     .container-fluid.site-wrapper-inner
       .row
         .col-md-10.col-md-offset-1
@@ -78,7 +87,7 @@ block content
           h4.text-center
             | Watch what students are saying about GIANT Word Winder®
       
-  section.full(style="background-color:#FFD34E;")
+  section#Meet-the-Inventor.full(style="background-color:#FFD34E;")
     .container-fluid.site-wrapper-inner
       .row
         .col-md-10.col-md-offset-1   
@@ -87,7 +96,7 @@ block content
           p
           | Hi! I’m David L. Hoyt. I’m a full-time,professional game and puzzle inventor.Being an inventor is awesome! I love being an inventor. You may not realize this, but everyone is an inventor. You are the inventor of your future.To be a good inventor, you need knowledge. I crave knowledge. I don’t care where I get it, but I want to get as much of it as I can.You can get knowledge a lot of different ways and in a lot of different places. There are awesome places like libraries and schools, but everyday the world is presenting you with lots of opportunities to become smarter. The world is always teaching you. A good inventor will soak up all forms of knowledge like a sponge. Whether you’re inventing a new ion-drive propulsion system for a space probe (which I would really love to work on), or inventing your own future, you will want to be smart. To be a good inventor, you are going to want to get as much knowledge as you can. Go get it!
   
-  section.full(style="")
+  section#Quotes.full(style="")
     .container-fluid.site-wrapper-inner
       .row
         .col-sm-10.col-md-offset-1

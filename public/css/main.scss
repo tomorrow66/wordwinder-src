@@ -128,9 +128,12 @@ footer {
 .util-nav {
   margin-right: 35px;
   float: left;
-  li {
-    margin-bottom: 0!important;
+  .dropdown{
+    margin-bottom: 0;
   }
+  /*@media (min-width: 768px) {
+    float:left;
+  }*/
 }
 
 .side-nav {
