@@ -6,18 +6,6 @@ body.david {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left center;
-
-      .bgImg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-image: url(/images/david/david-peek_body.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left bottom;
-      }
     }
     // padding-bottom: 0;
   }
