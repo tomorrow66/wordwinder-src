@@ -103,6 +103,7 @@ app.get('/david', davidController.getDavid);
 app.get('/david/about', davidController.getDavidAbout);
 app.get('/david/media', davidController.getDavidMedia);
 app.get('/david/partnerships', davidController.getDavidPartnerships);
+app.get('/david/games-and-puzzles', davidController.getDavidGamesPuzzles);
 app.get('/david/appearances', davidController.getDavidAppearances);
 app.get('/word-winder', wwController.getWordWinder);
 app.get('/giant-word-winder', gwwController.getGiantWordWinder);

@@ -31,3 +31,9 @@
      title: 'David L. Hoyt Appearances'
    });
  };
+
+ exports.getDavidGamesPuzzles = function(req, res) {
+   res.render('david/games-and-puzzles', {
+     title: 'Games And Puzzles'
+   });
+ };
