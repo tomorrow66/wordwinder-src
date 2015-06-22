@@ -4,21 +4,28 @@ block beforeBody
 block styles
 
 block content
-  .page-nav
-    .page-nav-content
-      ul
-        li
-          span#icon DLH
-          span.text 
-            a.page-scroll(href="#david") DAVID  
-        li
-          span#icon GWW
-          span.text 
-            a.page-scroll(href="#gww") GIANT WORD WINDER
-        li
-          span#icon WW
-          span.text 
-            a.page-scroll(href="#ww") WORD WINDER
+  ul.nav.nav-justified.fade-nav.secondary-nav.col-md-10
+    li(role="presentation")
+      a(href="#david") About David
+    li(role="presentation")
+      a(href="#gww") About Giant Word Winder
+    li(role="presentation")
+      a(href="#ww") About Word Winder
+  //- .page-nav
+  //-   .page-nav-content
+  //-     ul
+  //-       li
+  //-         span#icon DLH
+  //-         span.text 
+  //-           a.page-scroll(href="#david") DAVID  
+  //-       li
+  //-         span#icon GWW
+  //-         span.text 
+  //-           a.page-scroll(href="#gww") GIANT WORD WINDER
+  //-       li
+  //-         span#icon WW
+  //-         span.text 
+  //-           a.page-scroll(href="#ww") WORD WINDER
       
   section#david.david-section
     //- .slant

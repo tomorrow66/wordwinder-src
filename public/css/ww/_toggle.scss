@@ -1,5 +1,5 @@
 .toggle-more {
-  margin:10px 0;
+  margin:40px 0 10px;
   padding:0;
   text-align:left;
   font-family: Helvetica;
@@ -31,6 +31,8 @@
       background:#fff;
       color:#ec2b48;
       width:100%;
+      position: absolute;
+      z-index: 1;
     }
     .item {
       counter-increment:items;

@@ -36,63 +36,10 @@
   		$( '.hover-title' ).append( document.createTextNode( 'HOVER THE VIDEO TO PLAY' ) );
     });
 
-    // Custom Scroll
-    // $("body").onepage_scroll({
-    //   sectionContainer: "section",
-    //   animationTime: 2000,
-    //   easing: "cubic-bezier(0.680, -0.550, 0.265, 1.550)"
-    // });
-    // //jQuery to collapse the navbar on scroll
-    // $(window).scroll(function() {
-    //   if ($('.navbar').offset().top > 50) {
-    //     $('.navbar-fixed-top').addClass('top-nav-collapse');
-    //   } else {
-    //     $('.navbar-fixed-top').removeClass('top-nav-collapse');
-    //   }
-    // });
-
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
       $('.navbar-toggle:visible').click();
     });
-
-    //jQuery for page scrolling feature - requires jQuery Easing plugin
-    // $(function() {
-    //   $('a.page-scroll').bind('click', function(event) {
-    //     var $anchor = $(this);
-    //     $('html, body').stop().animate({
-    //       scrollTop: $($anchor.attr('href')).offset().top
-    //     }, 1500, 'easeInOutExpo');
-    //     event.preventDefault();
-    //   });
-    // });
-
-    // $(document).ready(function(){
-    //   $window = $(window);
-    //   $('section[data-type="background"]').each(function(){
-    //     var $scroll = $(this);
-    //     $(window).scroll(function() {
-    //       var yPos = -(($window.scrollTop() - $scroll.offset().top) / $scroll.data('speed'));
-    //       var coords = '50% '+ yPos + 'px';
-    //       $scroll.css({ backgroundPosition: coords });
-    //     });
-    //   });
-    // });
-    /* Create HTML5 element for IE */
-    // document.createElement("section");
-
-
-    // Fullpage.js
-    // $('.home#fullpage').fullpage({
-    //   anchors: ['david', 'word-winder', 'giant-word-winder'],
-    //   sectionsColor: ['#FFFFFF', '#FFFFFF', '#E14603'],
-    //   navigation: true,
-    //   navigationPosition: 'right',
-    //   navigationTooltips: ['David L. Hoyt', 'Word Winder', 'Giant Word Winder'],
-    //   loopBottom: true,
-    //   responsive: 900,
-    //   css3: true
-    // });
 
     // Testimonials
     (function(){
@@ -145,24 +92,14 @@
   	});
   });
 
-  // $(".secondary-nav").hide();
-  // $(window).scroll(function() {
-  //   if ($(window).scrollTop() > 100) {
-  //     $(".secondary-nav").fadeIn("slow");
-  //   }
-  //   else {
-  //     $(".secondary-nav").fadeOut("fast");
-  //   }
-  // });
-
-  // Parallax Video
-  // $(document).ready(function() {
-  //   $('#david-video').backgroundVideo({
-  //     pauseVideoOnViewLoss: true,
-  //     parallaxOptions: {
-  //       effect: 1.9
-  //     }
-  //   });
-  // });
+  $(".fade-nav").show();
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $(".fade-nav").fadeOut("slow");
+    }
+    else {
+      $(".fade-nav").fadeIn("fast");
+    }
+  });
 
 }());
